@@ -26,7 +26,7 @@ export const THEMES: ThemeConfig[] = [
       navFooter: "#f5f1ea",
       mainText: "#1c1a17",
       secondaryText: "#4a463f",
-      accent: "#b1481f",
+      accent: "#3D3A8C",
       line: "#d9d2c4"
     },
     fonts: {
@@ -43,7 +43,7 @@ export const THEMES: ThemeConfig[] = [
       navFooter: "#f5f1ea",
       mainText: "#1c1a17",
       secondaryText: "#4a463f",
-      accent: "#b1481f",
+      accent: "#3D3A8C",
       line: "#d9d2c4"
     },
     fonts: {
@@ -128,7 +128,7 @@ export const THEMES: ThemeConfig[] = [
     navFooter: "#ffffff",
     mainText: "#1c1a17",
     secondaryText: "#4a463f",
-    accent: "#b1481f",
+    accent: "#3D3A8C",
     line: "#d9d2c4"
   },
   fonts: {

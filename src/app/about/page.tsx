@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { STENCIL, TEAM, CERTIFICATIONS } from "@/data/stencil";
+import { STENCIL, TEAM, CERTIFICATIONS, TESTIMONIALS } from "@/data/stencil";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { CertificationsGallery } from "@/components/ui/CertificationsGallery";
@@ -79,6 +79,31 @@ export default function AboutPage() {
           <h2 className="font-serif text-[clamp(32px,4vw,64px)] tracking-[-0.015em] mb-16 max-w-[15ch]">Built on trust and compliance.</h2>
           
           <CertificationsGallery />
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="px-5 md:px-8 py-[120px] bg-bg-2 border-b border-line">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="flex justify-between items-baseline mb-16 pb-5 border-b border-line">
+            <div>
+              <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(08) &mdash; In their words</div>
+              <h2 className="font-serif text-[clamp(36px,4vw,64px)] tracking-[-0.02em]">Said about us.</h2>
+            </div>
+            <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 hidden md:block">4.8 &#9733; Google &middot; 60+ reviews</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-line border border-line">
+            {TESTIMONIALS.map((t, i) => (
+              <div key={i} className="bg-bg-2 px-9 py-10 flex flex-col gap-7 min-h-[360px]">
+                <span className="font-serif text-[64px] leading-[0.5] text-accent">&ldquo;</span>
+                <p className="font-serif text-[22px] leading-[1.32] tracking-[-0.005em]">{t.quote}</p>
+                <div className="mt-auto flex flex-col gap-1">
+                  <span className="text-sm font-medium">{t.name}</span>
+                  <span className="font-mono text-[11px] tracking-[0.06em] uppercase text-ink-3">{t.role}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

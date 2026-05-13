@@ -54,9 +54,9 @@ export const TESTIMONIALS = [
 
 export const STATS = [
   { val: 35,    suffix: '+', l: 'Years of service' },
-  { val: 1200,  suffix: '+', l: 'Projects delivered' },
+  { val: 200,  suffix: '+', l: 'Projects delivered' },
   { val: 14,    suffix: '',  l: 'States across India' },
-  { val: 4.2,   suffix: 'M', l: 'Sq ft executed', decimals: 1 },
+  { val: 7,   suffix: 'M+', l: 'Sq ft executed', decimals: 1 },
 ];
 
 export const TEAM = [
