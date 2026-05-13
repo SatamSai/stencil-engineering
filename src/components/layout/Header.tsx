@@ -112,7 +112,7 @@ export function Header() {
             </div>
           </div>
 
-          <Link href="/contact" className="hidden sm:inline-flex bg-ink text-bg px-[18px] py-2.5 rounded-full text-[13px] font-medium tracking-[0.01em]">
+          <Link href="/contact" className="hidden sm:inline-flex text-white px-[18px] py-2.5 rounded-full text-[13px] font-medium tracking-[0.01em]" style={{ backgroundColor: '#009FBE' }}>
             Contact Us &rarr;
           </Link>
 

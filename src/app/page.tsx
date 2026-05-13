@@ -46,6 +46,8 @@ export default function HomePage() {
     "/client-logos/ICICIPrudentialLifeInsurancejp.jpeg",
     "/client-logos/Johnson-Johnson-Logo.jpg",
     "/client-logos/Marriott_International-Logo.wine.png",
+    "/client-logos/accenture.png",
+    "/client-logos/dhl.png",
   ];
   const row2 = [
     "/client-logos/Nokia-Logo.wine.png",
@@ -53,6 +55,8 @@ export default function HomePage() {
     "/client-logos/Tech-mahindra-logo.png",
     "/client-logos/Wipro_Secondary Logo_Color_RGB.png",
     "/client-logos/mercedes-benz-seeklogo.png",
+    "/client-logos/godrej.png",
+    "/client-logos/ss-logo.png",
   ];
   const marquee1 = [...row1, ...row1];
   const marquee2 = [...row2, ...row2];
@@ -64,54 +68,53 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative h-[92vh] min-h-[680px] overflow-hidden bg-ink">
-        <Image 
-          src="/DSC_1684-scaled.jpg" 
-          alt="Stencil Engineering project interior" 
+        <Image
+          src="/DSC_1684-scaled.jpg"
+          alt="Stencil Engineering project interior"
           fill
           priority
           sizes="100vw"
-          className="object-cover brightness-[0.62] saturate-[1.05]" 
+          className="object-cover brightness-[0.5] saturate-[1.05]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/5 to-black/55" />
-        <div className="relative h-full px-5 md:px-8 py-12 pb-10 flex flex-col justify-between text-white">
-          <div className="flex justify-between items-start font-mono text-[11px] tracking-[0.08em] uppercase opacity-85">
-            <div />
-            <div className="text-right"><span>Established {STENCIL.estd}</span></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+        <div className="relative h-full px-5 md:px-10 py-10 flex flex-col justify-center text-white">
+          <div className="absolute top-10 right-5 md:right-10 flex justify-end font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">
+            <span>Est. {STENCIL.estd}</span>
           </div>
-          <h1 className="font-serif font-normal text-[clamp(56px,9vw,148px)] leading-[0.94] tracking-[-0.025em] max-w-[14ch]">
-            Delivering on<br />our promises.
-          </h1>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-7 border-t border-white/20 font-mono text-[11px] tracking-[0.06em] uppercase">
-            <div>
-              <div className="text-bg/55 mb-1.5">Now Building</div>
-              <div className="font-sans text-sm tracking-normal normal-case font-medium">Pfizer R&amp;D Block, Thane</div>
-            </div>
-            <div>
-              <div className="text-bg/55 mb-1.5">Sectors</div>
-              <div className="font-sans text-sm tracking-normal normal-case font-medium">MNC &middot; Healthcare &middot; Pharma &middot; Retail</div>
-            </div>
-            <div>
-              <div className="text-bg/55 mb-1.5">Footprint</div>
-              <div className="font-sans text-sm tracking-normal normal-case font-medium">4.2M sq ft delivered, 14 states</div>
-            </div>
-            <div>
-              <div className="text-white/55 mb-1.5">Speak with us</div>
-              <div className="font-sans text-sm tracking-normal normal-case font-medium">{STENCIL.phone}</div>
+          <div className="flex flex-col gap-6 max-w-3xl">
+            <h1 className="font-sans font-bold text-[clamp(48px,8vw,120px)] leading-[0.92] tracking-[-0.03em]">
+              Delivering on<br />our promises
+            </h1>
+            <p className="text-[clamp(14px,1.3vw,18px)] text-white/70 font-normal leading-relaxed max-w-[44ch]">
+              Leading Interior Designers &amp; Turnkey Contractors since 1989. Delivering excellence across India.
+            </p>
+            <div className="flex flex-wrap gap-3 pt-2">
+              <Link
+                href="#projects"
+                className="inline-flex items-center gap-2 bg-white text-ink font-semibold text-[13px] tracking-[0.04em] uppercase px-6 py-3 rounded-full hover:bg-white/90 transition-colors"
+              >
+                View Projects
+              </Link>
+              <Link
+                href="#contact"
+                className="inline-flex items-center gap-2 border border-white/60 text-white font-semibold text-[13px] tracking-[0.04em] uppercase px-6 py-3 rounded-full hover:bg-white/10 transition-colors"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>
-        <div className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 rotate-90 origin-right font-mono text-[10px] tracking-[0.2em] uppercase text-bg/70">Scroll</div>
       </section>
 
       {/* Intro */}
       <section className="px-5 md:px-8 py-16 border-b border-line" id="about">
-        <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Overview</div>
+        <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">About Us</div>
         <p className="font-serif text-[clamp(28px,3vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch]">
           We are leading interior designers and turnkey contractors, specializing in fitouts and corporate interiors.
         </p>
         <div className="mt-9 grid grid-cols-1 md:grid-cols-2 gap-12">
           <p className="text-[15px] leading-relaxed text-ink-2">
-            Over 30 years, we have achieved eminence in creating sophisticated ambiences for a distinctive multifaceted client-community, ranging from Service, Healthcare, Insurance, Finance, Retail, Hospitality, Commercial to Business process outsourcing sectors.
+            Over 35 years, we have achieved eminence in creating sophisticated ambiences for a distinctive multifaceted client-community, ranging from Service, Healthcare, Insurance, Finance, Retail, Hospitality, Commercial to Business process outsourcing sectors.
           </p>
           <p className="text-[15px] leading-relaxed text-ink-2">
             Our team is led by veteran interior design professionals having decades of versatile field experience in the interior design, contracting and allied operations. Together we pilot a well-balanced team of talents, specialising in diverse areas like project management, safety and quality assurance, financial planning to site supervision.
@@ -120,77 +123,48 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="px-5 md:px-8 py-[120px] bg-bg-2 border-b border-line" id="services">
+      <section className="px-5 md:px-8 py-16 border-b border-line" style={{background: '#edededb8'}} id="services">
         <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-16 mb-[72px]">
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(02) &mdash; Capabilities</div>
-            <div>
-              <h2 className="font-serif text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em] max-w-[14ch]">One contract.<br />Every discipline.</h2>
-              <p className="mt-6 text-[15px] leading-relaxed text-ink-2 max-w-[52ch]">
-                From the first space-planning sketch to the BMS commissioning report, we hold every trade in-house &mdash; so handovers are seams you don&apos;t see, and the client signs one contract, not twelve.
-              </p>
-            </div>
+         <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Services</div>
+          <div style={{marginBottom: '48px'}}>
+            <h2 className="font-serif text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em] max-w-[14ch]" style={{color: '#3D3A8C'}}>One contract.<br />Every discipline.</h2>
+            <p className="mt-6 text-[15px] leading-relaxed text-ink-2 max-w-[52ch]">
+              From the first space-planning sketch to the BMS commissioning report, we hold every trade in-house &mdash; so handovers are seams you don&apos;t see, and the client signs one contract, not twelve.
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-line">
             {SERVICES.map((s, i) => (
-              <div key={s} className="flex items-baseline gap-4 pr-6 py-[22px] border-b border-line hover:pl-3 transition-all">
+              <div key={s} className="flex items-baseline gap-[10px] py-[20px] pr-[10px] pl-0 border-b border-line hover:pl-3 transition-[padding-left] duration-200">
                 <span className="font-mono text-[11px] text-ink-3 min-w-7">{String(i + 1).padStart(2, "0")}</span>
                 <span className="font-serif text-[26px] leading-[1.05] tracking-[-0.01em]">{s}</span>
-                <span className="ml-auto opacity-40 font-mono text-sm">&nearr;</span>
               </div>
             ))}
-          </div>
-          <div className="mt-24" id="sectors">
-            <div className="flex justify-between items-baseline border-b border-line pb-4 mb-7">
-              <h3 className="font-serif text-[32px] tracking-[-0.01em]">Sectors we build for</h3>
-              <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3">06 verticals &middot; pan-India</span>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
-              {SECTORS.map(s => (
-                <div key={s.n} className="bg-bg-2 p-7 flex flex-col gap-3.5 min-h-[220px]">
-                  <span className="font-mono text-[11px] text-accent tracking-[0.08em]">&mdash; {s.n}</span>
-                  <span className="font-serif text-[28px] tracking-[-0.01em]">{s.name}</span>
-                  <span className="text-sm leading-relaxed text-ink-2 mt-auto">{s.desc}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="bg-ink text-bg px-5 md:px-8 py-24">
-        <div className="col-span-full flex justify-between mb-16 font-mono text-[11px] tracking-[0.1em] uppercase text-bg/60">
-            <span>(03) &mdash; In Numbers</span>
-            <span>As of Q2 2026</span>
+      <section style={{background: '#007A8C'}} className="text-bg px-8 py-[65px]">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-bg/60 mb-14">
+            <span>In Numbers</span>
           </div>
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-20 items-end">
-          {STATS.map((s, i) => (
-            <div key={i} className="pt-6 flex flex-col items-center">
-              <div className="font-serif text-[clamp(64px,7.5vw,120px)] leading-[0.9] tracking-[-0.03em] flex items-baseline justify-center text-center">
-                <AnimatedNumber value={s.val} decimals={s.decimals} />
-                <span className="text-[0.6em] ml-1">{s.suffix}</span>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12">
+            {STATS.map((s, i) => (
+              <div key={i} className="flex flex-col">
+                <div className="font-serif text-[clamp(56px,6.5vw,100px)] leading-[0.9] tracking-[-0.03em] flex items-baseline">
+                  <AnimatedNumber value={s.val} decimals={s.decimals} />
+                  <span className="ml-1">{s.suffix}</span>
+                </div>
+                <div className="font-mono text-xs tracking-[0.08em] uppercase text-bg/65 mt-4">{s.l}</div>
               </div>
-              <div className="font-mono text-xs tracking-[0.08em] uppercase text-bg/65 mt-3.5 text-center">{s.l}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Certifications Highlight */}
-      <section className="bg-bg-2 border-b border-line px-5 md:px-8 py-16">
-        <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-12 md:gap-16">
-          <div className="max-w-[40ch] text-center">
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-4">Accredited Excellence</div>
-            <h3 className="font-serif text-[clamp(28px,3vw,40px)] tracking-[-0.01em] leading-tight">Industry recognized quality &amp; safety standards.</h3>
+            ))}
           </div>
-          
-          <CertificationsGallery />
         </div>
       </section>
 
       {/* Featured Projects Highlight */}
-      <section className="px-5 md:px-8 py-[120px] bg-bg border-b border-line" id="projects">
+      <section className="px-5 md:px-8 py-[120px] bg-bg border-b border-line" style={{background: '#edededb8'}} id="projects">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex justify-between items-end mb-16">
             <div>
@@ -214,30 +188,29 @@ export default function HomePage() {
       </section>
 
       {/* Clients */}
-      <section className="bg-bg-2 border-b border-line overflow-hidden" id="clients">
+      <section className="border-b border-line overflow-hidden" id="clients">
         <div className="flex justify-between items-baseline px-5 md:px-8 py-16 pb-8 max-w-[1400px] mx-auto">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(05) &mdash; Clientele</div>
+            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Clientele</div>
             <h2 className="font-serif text-[clamp(28px,3.2vw,48px)] tracking-[-0.015em]">In good company.</h2>
           </div>
-          <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 hidden md:block">40+ marquee clients &middot; since 1989</span>
         </div>
-        <div className="relative overflow-hidden border-t border-b border-line py-12 bg-white/40 flex flex-col gap-6">
+        <div className="relative overflow-hidden py-12 bg-white/40 flex flex-col gap-6">
           {/* Row 1: Forward */}
           <div className="marquee-container">
             {marquee1.map((logo, i) => (
-              <div key={i} className="flex items-center justify-center px-10 h-20 w-[240px] shrink-0 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-500">
+              <div key={i} className="flex items-center justify-center px-10 h-20 w-[240px] shrink-0 transition-all duration-500">
                 <div className="relative w-full h-[65%]">
                   <Image src={logo} alt="Client logo" fill className="object-contain" sizes="240px" />
                 </div>
               </div>
             ))}
           </div>
-          
+
           {/* Row 2: Reverse */}
           <div className="marquee-container-reverse">
             {marquee2.map((logo, i) => (
-              <div key={i} className="flex items-center justify-center px-10 h-20 w-[240px] shrink-0 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-500">
+              <div key={i} className="flex items-center justify-center px-10 h-20 w-[240px] shrink-0 transition-all duration-500">
                 <div className="relative w-full h-[65%]">
                   <Image src={logo} alt="Client logo" fill className="object-contain" sizes="240px" />
                 </div>
@@ -245,43 +218,22 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        <div className="px-5 md:px-8 py-[120px] pb-24 max-w-[1400px] mx-auto">
-          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-6">(06) &mdash; Our Mission</div>
-          <p className="font-serif italic text-[clamp(32px,4vw,64px)] leading-[1.18] tracking-[-0.015em] max-w-[22ch]">
-            To offer a complete range of design, fitout and contracting solutions by delivering high-quality, cost-effective projects &mdash; with our clients&apos; relationship as our number one priority.
-          </p>
-          <div className="mt-8 font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3">&mdash; Stencil Engineering, est. 1989</div>
-        </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="px-5 md:px-8 py-[120px] bg-bg-2 border-b border-line">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="flex justify-between items-baseline mb-16 pb-5 border-b border-line">
-            <div>
-              <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(08) &mdash; In their words</div>
-              <h2 className="font-serif text-[clamp(36px,4vw,64px)] tracking-[-0.02em]">Said about us.</h2>
-            </div>
-            <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 hidden md:block">4.8 &#9733; Google &middot; 60+ reviews</span>
+      {/* Certifications Highlight */}
+      <section className="bg-bg-2 border-b border-line px-5 md:px-8 py-16" style={{background: '#edededb8'}}>
+        <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-12 md:gap-16">
+          <div className="max-w-[40ch] text-center">
+            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-4">Accredited Excellence</div>
+            <h3 className="font-serif text-[clamp(28px,3vw,40px)] tracking-[-0.01em] leading-tight">Industry recognized quality &amp; safety standards.</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-line border border-line">
-            {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="bg-bg-2 px-9 py-10 flex flex-col gap-7 min-h-[360px]">
-                <span className="font-serif text-[64px] leading-[0.5] text-accent">&ldquo;</span>
-                <p className="font-serif text-[22px] leading-[1.32] tracking-[-0.005em]">{t.quote}</p>
-                <div className="mt-auto flex flex-col gap-1">
-                  <span className="text-sm font-medium">{t.name}</span>
-                  <span className="font-mono text-[11px] tracking-[0.06em] uppercase text-ink-3">{t.role}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+          
+          <CertificationsGallery />
         </div>
       </section>
-      
 
       {/* Contact CTA */}
-      <section className="px-5 md:px-8 py-[120px] bg-ink text-bg text-center" id="contact">
+      <section className="px-5 md:px-8 py-[120px] bg-ink text-bg text-center" id="contact" style={{background: '#007A8C'}}>
         <div className="max-w-[1400px] mx-auto">
           <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-8">(10) &mdash; Contact</div>
           <h2 className="font-serif text-[clamp(40px,5vw,80px)] leading-[1.1] tracking-[-0.02em] mb-12 max-w-[15ch] mx-auto">
@@ -289,7 +241,7 @@ export default function HomePage() {
           </h2>
           <Link 
             href="/contact" 
-            className="inline-flex items-center gap-4 px-12 py-6 bg-accent text-bg rounded-full text-lg font-medium transition-transform hover:scale-105 active:scale-95"
+            className="inline-flex items-center gap-4 px-12 py-6 text-bg rounded-full text-lg font-medium transition-transform hover:scale-105 active:scale-95" style={{ backgroundColor: '#009FBE' }}
           >
             Get in touch &rarr;
           </Link>

@@ -18,31 +18,23 @@ const SITEMAP = [
   { label: "Contact", href: "/contact" },
 ];
 
-const STUDIOS = ["Mumbai (HQ)", "Pune", "Bengaluru", "Ahmedabad", "Delhi NCR"];
 const CERTS = ["ISO 9001 : 2015", "ISO 14001 : 2015", "ISO 45001 : 2018", "OHSAS 18001 : 2007"];
 
 export function Footer() {
   return (
-    <footer className="bg-bg border-t border-line px-4 md:px-8 py-16 md:py-24">
+    <footer className="bg-bg border-t border-line px-4 md:px-8 py-16 md:py-12">
       <div className="max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Logo & Info */}
           <div className="lg:col-span-2 pr-0 lg:pr-16 flex flex-col justify-between">
             <div>
-              <Image 
-                src="/stencil-logo-lockup.png" 
-                alt="Stencil Engineering" 
-                width={180} 
-                height={45} 
-                className="h-9 w-auto" 
+              <Image
+                src="/stencil-logo-vertical.png"
+                alt="Stencil Engineering"
+                width={720}
+                height={180}
+                className="h-40 w-auto"
               />
-              <p className="mt-8 text-sm leading-relaxed text-ink-2 max-w-[32ch]">
-                Leading Interior Designers & Turnkey Contractors since 1989. Delivering excellence across India.
-              </p>
-            </div>
-            <div className="mt-12 flex gap-4 text-ink-3">
-              <a href="#" className="hover:text-accent transition-colors">Instagram</a>
-              <a href="#" className="hover:text-accent transition-colors">LinkedIn</a>
             </div>
           </div>
           {/* Sitemap */}
@@ -61,20 +53,6 @@ export function Footer() {
               {PROJECT_CATEGORIES.map(cat => (
                 <Link key={cat.label} href={cat.href} className="text-ink-2 hover:text-ink">{cat.label}</Link>
               ))}
-            </div>
-          </div>
-          {/* Studios */}
-          <div>
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-5">Studios</div>
-            <div className="flex flex-col gap-2.5 text-sm">
-              {STUDIOS.map(s => <span key={s} className="text-ink-2">{s}</span>)}
-            </div>
-          </div>
-          {/* Certifications */}
-          <div>
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-5">Certifications</div>
-            <div className="flex flex-col gap-1.5 font-mono text-[11px] tracking-[0.05em] text-ink-3">
-              {CERTS.map(c => <span key={c}>{c}</span>)}
             </div>
           </div>
         </div>
