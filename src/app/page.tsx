@@ -113,28 +113,28 @@ export default function HomePage() {
       </section>
 
       {/* Intro */}
-      <section className="px-5 md:px-8 py-16 border-b border-line" id="about">
-        <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">About Us</div>
-        <p className="font-serif text-[clamp(28px,3vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch] text-accent">
+      <section className="px-5 md:px-8 py-16" id="about">
+        <div className=" text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">About Us</div>
+        <p className="text-[clamp(28px,3.1vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch] text-accent">
           We are leading interior designers and turnkey contractors, specializing in fitouts and corporate interiors.
         </p>
         <div className="mt-9 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <p className="text-[15px] leading-relaxed text-ink-2">
+          <p className="text-[17px] leading-relaxed">
             Over 35 years, we have achieved eminence in creating sophisticated ambiences for a distinctive multifaceted client-community, ranging from Service, Healthcare, Insurance, Finance, Retail, Hospitality, Commercial to Business process outsourcing sectors.
           </p>
-          <p className="text-[15px] leading-relaxed text-ink-2">
+          <p className="text-[17px] leading-relaxed">
             Our team is led by veteran interior design professionals having decades of versatile field experience in the interior design, contracting and allied operations. Together we pilot a well-balanced team of talents, specialising in diverse areas like project management, safety and quality assurance, financial planning to site supervision.
           </p>
         </div>
       </section>
 
       {/* Services */}
-      <section className="px-5 md:px-8 py-16 border-b border-line" style={{background: '#edededb8'}} id="services">
+      <section className="px-5 md:px-8 py-16" style={{background: '#edededb8'}} id="services">
         <div className="max-w-[1400px] mx-auto">
-         <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Services</div>
-          <div style={{marginBottom: '48px'}}>
-            <h2 className="text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em] max-w-[14ch]">One contract.<br />Every discipline.</h2>
-            <p className="mt-6 text-[15px] leading-relaxed text-ink-2 max-w-[52ch]">
+         <div className="text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Services</div>
+          <div style={{marginBottom: '24px'}}>
+            <h2 className="text-[clamp(28px,3.1vw,48px)] leading-none tracking-[-0.02em] max-w-[14ch]">One contract.<br />Every discipline.</h2>
+            <p className="mt-6 text-[17px] leading-relaxed text-ink-2 max-w-[52ch]">
               From the first space-planning sketch to the BMS commissioning report, we hold every trade in-house &mdash; so handovers are seams you don&apos;t see, and the client signs one contract, not twelve.
             </p>
           </div>
@@ -150,11 +150,8 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <section style={{background: '#009FBE'}} className="text-bg px-8 py-[65px]">
+      <section style={{background: '#2b5573'}} className="text-bg px-8 py-16">
         <div className="max-w-[1400px] mx-auto">
-          <div className=" text-[11px] tracking-[0.1em] uppercase text-bg/60 mb-14">
-            <span>In Numbers</span>
-          </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12">
             {STATS.map((s, i) => (
               <div key={i} className="flex flex-col items-center">
@@ -162,7 +159,7 @@ export default function HomePage() {
                   <AnimatedNumber value={s.val} decimals={s.decimals} />
                   <span className="ml-1">{s.suffix}</span>
                 </div>
-                <div className="text-xs tracking-[0.08em] uppercase text-bg/65 mt-4">{s.l}</div>
+                <div className="tracking-[0.08em] text-[18px] text-bg/65 mt-4">{s.l}</div>
               </div>
             ))}
           </div>
@@ -170,16 +167,16 @@ export default function HomePage() {
       </section>
 
       {/* Featured Projects Highlight */}
-      <section className="px-5 md:px-8 py-[120px] bg-bg border-b border-line" style={{background: '#edededb8'}} id="projects">
+      <section className="px-8 py-16" style={{background: '#edededb8'}} id="projects">
         <div className="max-w-[1400px] mx-auto">
-          <div className="flex justify-between items-end mb-16">
+          <div className="flex justify-between items-end mb-8">
             <div>
-              <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(04) &mdash; Selected Work</div>
-              <h2 className="font-serif text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em] text-accent">Featured<br />Projects.</h2>
+              <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Selected Work</div>
+              <h2 className="font-serif text-[clamp(28px,3.1vw,48px)] leading-none tracking-[-0.02em] text-accent">Featured Projects.</h2>
             </div>
-            <Link href="/projects" className="hidden sm:inline-flex items-center gap-2 text-[11px] tracking-[0.1em] uppercase text-ink group">
-              View all projects <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
+            <a href="/projects" className="hidden sm:inline-flex items-center gap-2 text-[13px] tracking-[0.02em] font-medium bg-ink text-bg px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out group pointer">
+              View All <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projectsData.slice(0, 4).map((project) => (
@@ -194,11 +191,11 @@ export default function HomePage() {
       </section>
 
       {/* Clients */}
-      <section className="border-b border-line overflow-hidden" id="clients">
+      <section className="overflow-hidden" id="clients">
         <div className="flex justify-between items-baseline px-5 md:px-8 py-16 pb-8 max-w-[1400px] mx-auto">
           <div>
-            <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Clientele</div>
-            <h2 className="font-serif text-accent text-[clamp(28px,3.2vw,48px)] tracking-[-0.015em]">In good company.</h2>
+            <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Clientele</div>
+            <h2 className="font-serif text-accent text-[clamp(28px,3.1vw,48px)] tracking-[-0.015em]">In good company.</h2>
           </div>
         </div>
         <div className="relative overflow-hidden py-12 bg-white/40 flex flex-col gap-6">
@@ -227,11 +224,11 @@ export default function HomePage() {
       </section>
 
       {/* Certifications Highlight */}
-      <section className="bg-bg-2 border-b border-line px-5 md:px-8 py-16" style={{background: '#edededb8'}}>
-        <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-12 md:gap-16">
-          <div className="max-w-[40ch] text-center">
-            <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-4">Accredited Excellence</div>
-            <h3 className="font-serif text-[clamp(28px,3vw,40px)] tracking-[-0.01em] leading-tight">Industry recognized quality &amp; safety standards.</h3>
+      <section className="px-5 md:px-8 py-16" style={{background: '#edededb8'}}>
+        <div className="max-w-[1400px] mx-auto flex flex-col gap-10">
+          <div className="max-w-[45ch]">
+            <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Accredited Excellence</div>
+            <h3 className="font-serif text-[clamp(28px,3.1vw,40px)] tracking-[-0.01em] leading-tight">Industry recognized quality <br/>&amp; safety standards</h3>
           </div>
           
           <CertificationsGallery />
@@ -239,9 +236,8 @@ export default function HomePage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="px-5 md:px-8 py-[120px] bg-white text-bg text-center" id="contact">
+      <section className="px-8 py-16 bg-white text-bg text-center" id="contact">
         <div className="max-w-[1400px] mx-auto">
-          <div className="text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-8">(10) &mdash; Contact</div>
           <h2 className="font-serif text-[clamp(40px,5vw,80px)] text-accent leading-[1.1] tracking-[-0.02em] mb-12 max-w-[15ch] mx-auto">
             Ready to build your next space?
           </h2>

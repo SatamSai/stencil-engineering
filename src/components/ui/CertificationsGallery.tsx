@@ -3,7 +3,7 @@ import { CERTIFICATIONS } from "@/data/stencil";
 
 export function CertificationsGallery() {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-20">
+    <div className="flex flex-wrap items-center justify-between px-16">
       {CERTIFICATIONS.map((cert) => (
         <div 
           key={cert.id} 
@@ -20,8 +20,8 @@ export function CertificationsGallery() {
             />
           </div>
           <div className="flex flex-col gap-1 md:gap-1.5">
-            <div className=" text-[8px] md:text-[9px] tracking-[0.05em] uppercase text-accent leading-none">{cert.name}</div>
-            <div className="font-serif text-[13px] md:text-[15px] leading-tight text-ink">{cert.label}</div>
+            <div className=" text-[14px] md:text-[12px] tracking-[0.05em] uppercase text-accent leading-none">{cert.name}</div>
+            <div className="font-serif text-[14px] md:text-[16px] leading-tight text-ink">{cert.label}</div>
           </div>
         </div>
       ))}

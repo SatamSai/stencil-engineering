@@ -92,7 +92,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         )}
 
         <div className="absolute left-4 bottom-3.5 text-white/90 font-mono text-[10px] tracking-[0.08em] uppercase drop-shadow-lg pointer-events-none">
-          {project.location || "MUMBAI, IN"} &nbsp;&middot;&nbsp; {project.year || "2023"}
+          {project.location || "MUMBAI, IN"}
         </div>
       </div>
 

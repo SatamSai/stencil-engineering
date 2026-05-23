@@ -23,47 +23,34 @@ const CERTS = ["ISO 9001 : 2015", "ISO 14001 : 2015", "ISO 45001 : 2018", "OHSAS
 
 export function Footer() {
   return (
-    <footer className="bg-bg border-t border-line px-4 md:px-8 py-16 md:py-12">
+    <footer className="bg-bg border-t border-line px-4 md:px-8 py-16 md:py-12 bg-bg-2">
       <div className="max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {/* Logo & Info */}
-          <div className="lg:col-span-2 pr-0 lg:pr-16 flex flex-col justify-between">
-            <div>
-              <Image
-                src="/stencil-logo-vertical.png"
-                alt="Stencil Engineering"
-                width={720}
-                height={180}
-                className="h-40 w-auto"
-              />
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 text-white">
           {/* Sitemap */}
           <div>
-            <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-5">Sitemap</div>
+            <div className="text-[14px] tracking-[0.1em] mb-5 font-medium">Sitemap</div>
             <div className="flex flex-col gap-2.5 text-sm">
               {SITEMAP.map(x => (
-                <Link key={x.label} href={x.href} className="text-ink-2 hover:text-ink hover:underline">{x.label}</Link>
+                <Link key={x.label} href={x.href} className="hover:underline">{x.label}</Link>
               ))}
             </div>
           </div>
           {/* Project Types */}
           <div>
-            <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-5">Project Types</div>
+            <div className="text-[14px] tracking-[0.1em] mb-5 font-medium">Project Types</div>
             <div className="flex flex-col gap-2.5 text-sm">
               {PROJECT_CATEGORIES.map(cat => (
-                <Link key={cat.label} href={cat.href} className="text-ink-2 hover:text-ink hover:underline">{cat.label}</Link>
+                <Link key={cat.label} href={cat.href} className="hover:underline">{cat.label}</Link>
               ))}
             </div>
           </div>
         </div>
         {/* Bottom */}
-        <div className="mt-16 pt-6 border-t border-line flex flex-col sm:flex-row justify-between items-center font-mono text-[11px] tracking-[0.06em] uppercase text-ink-3 gap-4">
+        <div className="mt-8 pt-6 border-t border-line flex flex-col sm:flex-row justify-between items-center text-[13px] tracking-[0.06em] gap-4 text-white">
           <span>&copy; 2026 {STENCIL.fullName}</span>
           <div className="flex gap-[18px]">
-            <a href="#" className="hover:text-ink hover:underline inline-flex items-center gap-0.5">LinkedIn <ArrowUpRight className="w-3 h-3"/></a>
-            <a href="#" className="hover:text-ink hover:underline inline-flex items-center gap-0.5">Instagram <ArrowUpRight className="w-3 h-3"/></a>
-            <a href="#" className="hover:text-ink hover:underline inline-flex items-center gap-0.5">Download Brochure <ArrowDown className="w-3 h-3"/></a>
+            <a href="#" className="hover:underline inline-flex items-center gap-0.5">LinkedIn <ArrowUpRight className="w-3 h-3"/></a>
+            <a href="#" className="hover:underline inline-flex items-center gap-0.5">Instagram <ArrowUpRight className="w-3 h-3"/></a>
           </div>
         </div>
       </div>

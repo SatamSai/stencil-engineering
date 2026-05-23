@@ -83,7 +83,7 @@ function ProjectsContent() {
                         : "text-ink-3 md:text-[22px] text-[18px] font-normal hover:text-ink"
                     }`}
                   >
-                    {t === "All" ? "Everything" : t}
+                    {t}
                   </button>
                 ))}
               </div>
@@ -142,10 +142,8 @@ function ProjectsContent() {
 export default function ProjectsPage() {
   return (
     <>
-      <div className="border-b border-line" >
-        <div className="px-5 md:px-8 py-24">
+        <div className="p-8 pt-16">
           <div className="max-w-[1400px] mx-auto">
-            <div className="text-[11px] tracking-[0.1em] uppercase mb-4">(04) &mdash; Portfolio</div>
             <h1 className="text-[clamp(48px,6vw,100px)] text-accent leading-[0.96] tracking-[-0.025em] max-w-[12ch]">
               Selected<br />work.
             </h1>
@@ -154,7 +152,6 @@ export default function ProjectsPage() {
             </p>
           </div>
         </div>
-      </div>
       <Suspense fallback={<div className="py-24 text-center text-ink-3">Loading portfolio...</div>}>
         <ProjectsContent />
       </Suspense>

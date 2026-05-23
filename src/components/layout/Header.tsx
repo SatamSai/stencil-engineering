@@ -76,7 +76,7 @@ export function Header() {
             })}
           </div>
 
-          <Link href="/contact" className="hidden sm:inline-flex text-white px-[18px] py-2.5 rounded-full text-[13px] font-medium tracking-[0.01em] transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:opacity-90 active:scale-95" style={{ backgroundColor: '#009FBE' }}>
+          <Link href="/contact" className="hidden sm:inline-flex text-white px-[18px] py-2.5 rounded-full text-[13px] font-medium tracking-[0.01em] transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:opacity-90 active:scale-95" style={{ backgroundColor: '#2b5573' }}>
             Contact Us &rarr;
           </Link>
 

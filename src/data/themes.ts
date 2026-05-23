@@ -24,11 +24,11 @@ export const THEMES: ThemeConfig[] = [
     colors: {
       pageBg: "#ffffff",
       secondaryPageBg: "#edededb8",
-      sections: "#009FBE",
+      sections: "#2b5573",
       navFooter: "#f5f1ea",
       mainText: "#1c1a17",
       secondaryText: "#4a463f",
-      accent: "#0089a4",
+      accent: "#2b5573",
       line: "#d9d2c4"
     },
     fonts: {
