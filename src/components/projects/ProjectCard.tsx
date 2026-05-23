@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 interface ProjectCardProps {
@@ -49,7 +50,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
       onMouseLeave={handleMouseLeave}
       className="group flex flex-col gap-3.5 cursor-pointer"
     >
-      <div className="relative overflow-hidden bg-bg-2 h-[50vh] max-h-[520px]">
+      <div className="relative overflow-hidden bg-line h-[50vh] max-h-[520px]">
         <AnimatePresence initial={false}>
           <motion.div
             key={currentImageIdx}
@@ -84,7 +85,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
             {project.images.map((_, idx) => (
               <div 
                 key={idx} 
-                className={`h-[5px] rounded-full transition-all duration-300 ${idx === currentImageIdx ? "w-4 bg-bg" : "w-[5px] bg-bg/50"}`}
+                className={`h-[5px] rounded-full transition-all duration-300 ${idx === currentImageIdx ? "w-4 bg-white" : "w-[5px] bg-white/50"}`}
               />
             ))}
           </div>
@@ -97,9 +98,9 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
 
       <div className="flex justify-between items-baseline">
         <span className="font-serif text-[18px] tracking-[-0.01em] leading-[1.1]">{project.title}</span>
-        <span className="font-mono text-[10px] tracking-[0.06em] uppercase text-ink-3">&nearr; View</span>
+        <span className=" text-[10px] tracking-[0.06em] uppercase text-ink-3 flex items-center gap-0.5"><ArrowUpRight className="w-3 h-3"/> View</span>
       </div>
-      <div className="font-mono text-[10px] tracking-[0.06em] uppercase text-ink-3 flex gap-4">
+      <div className=" text-[10px] tracking-[0.06em] uppercase text-ink-3 flex gap-4">
         <span>{project.type}</span>
         <span>{project.size || "45,000"} SQ FT</span>
       </div>

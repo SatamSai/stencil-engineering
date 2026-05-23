@@ -65,21 +65,21 @@ function ProjectsContent() {
 
   return (
     <>
-      <section className="px-5 md:px-8 py-24 pb-[120px]">
+      <section className="px-5 md:px-8 py-24 pb-[120px]"  style={{ background: '#edededb8' }}>
         <div className="max-w-[1400px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-16">
             
             {/* Sidebar Filters */}
             <div className="w-full lg:w-[200px] shrink-0 lg:sticky lg:top-[100px] self-start z-10">
-              <h2 className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-7 border-b border-line pb-3">Index</h2>
+              <h2 className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-7 border-b border-line pb-3">Index</h2>
               <div className="flex flex-row lg:flex-col gap-3 flex-wrap lg:overflow-visible pb-4 lg:pb-0">
                 {types.map(t => (
                   <button 
                     key={t}
                     onClick={() => handleFilterClick(t)}
-                    className={`text-left bg-transparent p-0 font-serif tracking-[-0.01em] transition-all duration-300 whitespace-nowrap leading-[1.2] ${
+                    className={`text-left bg-transparent p-0 tracking-[-0.01em] transition-all duration-300 whitespace-nowrap leading-[1.2] ${
                       filter === t 
-                        ? "text-ink md:text-[28px] text-[22px] font-semibold" 
+                        ? "text-accent md:text-[28px] text-[22px] font-semibold" 
                         : "text-ink-3 md:text-[22px] text-[18px] font-normal hover:text-ink"
                     }`}
                   >
@@ -92,56 +92,32 @@ function ProjectsContent() {
             {/* Grid Area */}
             <div className="flex-1">
               <AnimatePresence mode="wait">
-                <motion.div 
-                  key={filter}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
-                  className="grid grid-cols-12 gap-y-12 gap-x-4"
-                >
-                  {displayedProjects.map((project, idx) => {
-                    const PATTERN = [
-                      "col-span-12",
-                      "col-span-12 md:col-span-7", 
-                      "col-span-12 md:col-span-5",
-                      "col-span-12 md:col-span-4", 
-                      "col-span-12 md:col-span-4", 
-                      "col-span-12 md:col-span-4",
-                      "col-span-12 md:col-span-6", 
-                      "col-span-12 md:col-span-6",
-                      "col-span-12 md:col-span-5",
-                      "col-span-12 md:col-span-7"
-                    ];
-                    const layoutSpan = PATTERN[idx % PATTERN.length];
-                    
-                    return (
-                      <div key={project.id} className={layoutSpan}>
+                  <motion.div 
+                    key={filter}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-8 lg:gap-x-12"
+                  >
+                    {displayedProjects.map((project, idx) => (
+                      <div key={project.id}>
                         <ProjectCard 
                           project={project} 
                           onClick={() => setSelectedProject(project)} 
                         />
                       </div>
-                    );
-                  })}
+                    ))}
 
-                  {/* Dynamic Shimmers for more items */}
-                  {isLoadingMore && (
-                    <>
-                      {/* Row 1: 3 columns */}
-                      <div className="col-span-12 md:col-span-4"><ProjectSkeleton /></div>
-                      <div className="col-span-12 md:col-span-4"><ProjectSkeleton /></div>
-                      <div className="col-span-12 md:col-span-4"><ProjectSkeleton /></div>
-                      
-                      {/* Row 2: 2 columns (Asymmetric) */}
-                      <div className="col-span-12 md:col-span-7"><ProjectSkeleton /></div>
-                      <div className="col-span-12 md:col-span-5"><ProjectSkeleton /></div>
-                      
-                      {/* Row 3: 1 column Full Width or 3 columns */}
-                      <div className="col-span-12 md:col-span-4"><ProjectSkeleton /></div>
-                      <div className="col-span-12 md:col-span-8"><ProjectSkeleton /></div>
-                    </>
-                  )}
+                    {/* Dynamic Shimmers for more items */}
+                    {isLoadingMore && (
+                      <>
+                        <div><ProjectSkeleton /></div>
+                        <div><ProjectSkeleton /></div>
+                        <div><ProjectSkeleton /></div>
+                        <div><ProjectSkeleton /></div>
+                      </>
+                    )}
                 </motion.div>
               </AnimatePresence>
 
@@ -166,14 +142,14 @@ function ProjectsContent() {
 export default function ProjectsPage() {
   return (
     <>
-      <div className="border-b border-line">
-        <div className="bg-ink text-bg px-5 md:px-8 py-24">
+      <div className="border-b border-line" >
+        <div className="px-5 md:px-8 py-24">
           <div className="max-w-[1400px] mx-auto">
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-4">(04) &mdash; Portfolio</div>
-            <h1 className="font-serif text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch]">
+            <div className="text-[11px] tracking-[0.1em] uppercase mb-4">(04) &mdash; Portfolio</div>
+            <h1 className="text-[clamp(48px,6vw,100px)] text-accent leading-[0.96] tracking-[-0.025em] max-w-[12ch]">
               Selected<br />work.
             </h1>
-            <p className="mt-6 text-[15px] leading-relaxed text-bg/75 max-w-[52ch]">
+            <p className="mt-6 text-[20px] leading-relaxed text-bg/75 max-w-[52ch]">
               A glimpse into the spaces we&apos;ve transformed and the experiences we&apos;ve elevated.
             </p>
           </div>

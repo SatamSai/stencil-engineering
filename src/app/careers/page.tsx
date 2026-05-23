@@ -16,20 +16,20 @@ export default function CareersPage() {
   return (
     <>
       <div className="border-b border-line">
-        <div className="bg-ink text-bg px-5 md:px-8 py-24">
+        <div className="px-5 md:px-8 py-20">
           <div className="max-w-[1400px] mx-auto">
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-4">(01) &mdash; Careers</div>
-            <h1 className="font-serif text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch]">
+            <div className=" text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-4">(01) &mdash; Careers</div>
+            <h1 className="font-serif text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch] text-bg-2">
               Join the<br />team.
             </h1>
-            <p className="mt-6 text-[15px] leading-relaxed text-bg/75 max-w-[52ch]">
+            <p className="mt-6 text-[18px] leading-relaxed text-bg/75 max-w-[52ch]">
               We are always looking for people who enjoy a challenge and have a thirst for knowledge.
             </p>
           </div>
         </div>
       </div>
 
-      <section className="px-5 md:px-8 py-24 bg-bg-2 overflow-hidden">
+      <section className="px-5 md:px-8 py-24 overflow-hidden" style={{backgroundColor:"#edededb8"}}>
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-20">
             {/* Left Column: Text */}
@@ -63,22 +63,22 @@ export default function CareersPage() {
                     onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
                   >
                     <div className="flex flex-col gap-2">
-                      <label className="font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3" htmlFor="c-name">Full Name</label>
+                      <label className=" text-[11px] tracking-[0.08em] uppercase text-ink-3" htmlFor="c-name">Full Name</label>
                       <input className="bg-transparent border-b border-line py-2 pb-3 text-ink font-sans text-base outline-none w-full focus:border-ink placeholder:text-ink-3/40" id="c-name" type="text" placeholder="Your Name" required />
                     </div>
 
                     <div className="flex flex-col gap-2">
-                      <label className="font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3" htmlFor="c-email">Email Address</label>
+                      <label className=" text-[11px] tracking-[0.08em] uppercase text-ink-3" htmlFor="c-email">Email Address</label>
                       <input className="bg-transparent border-b border-line py-2 pb-3 text-ink font-sans text-base outline-none w-full focus:border-ink placeholder:text-ink-3/40" id="c-email" type="email" placeholder="email@example.com" required />
                     </div>
 
                     <div className="flex flex-col gap-2">
-                      <label className="font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3" htmlFor="c-phone">Contact Number</label>
+                      <label className=" text-[11px] tracking-[0.08em] uppercase text-ink-3" htmlFor="c-phone">Contact Number</label>
                       <input className="bg-transparent border-b border-line py-2 pb-3 text-ink font-sans text-base outline-none w-full focus:border-ink placeholder:text-ink-3/40" id="c-phone" type="tel" placeholder="+91 00000 00000" required />
                     </div>
 
                     <div className="flex flex-col gap-4 pt-4">
-                      <label className="font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3">Resume Upload</label>
+                      <label className=" text-[11px] tracking-[0.08em] uppercase text-ink-3">Resume Upload</label>
                       <div className="relative">
                         <input 
                           type="file" 
@@ -100,13 +100,13 @@ export default function CareersPage() {
                     </div>
 
                     <div className="flex items-center gap-6 mt-6">
-                      <button type="submit" className="bg-ink text-bg px-10 py-4 rounded-full text-[13px] font-medium tracking-[0.02em] hover:opacity-90 transition-opacity">
+                      <button type="submit" className="bg-bg-2 text-bg px-10 py-4 rounded-full text-[13px] font-medium tracking-[0.02em] transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_4px_14px_0_rgba(0,0,0,0.1)]">
                         Submit Application &rarr;
                       </button>
                       <button 
                         type="reset" 
                         onClick={() => { setFileName(null); }}
-                        className="font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3 hover:text-ink transition-colors"
+                        className=" text-[11px] tracking-[0.08em] uppercase text-ink-3 hover:text-ink transition-colors"
                       >
                        &mdash; Clear
                       </button>

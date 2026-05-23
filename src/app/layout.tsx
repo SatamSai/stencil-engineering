@@ -10,6 +10,7 @@ import {
   Libre_Caslon_Display,
   Manrope
 } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -71,6 +72,33 @@ const manrope = Manrope({
   display: "swap",
 });
 
+const neueHaas = localFont({
+  src: [
+    {
+      path: "../../public/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayThin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBold.ttf",
+      weight: "700",
+      style: "normal",
+    }
+  ],
+  variable: "--font-neue-haas",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Stencil Engineering — Interior Design & Turnkey Contractors",
   description: "Leading Interior Designers & Turnkey Contractors since 1989. Corporate fitouts, healthcare, hospitality, pharma and retail spaces across India.",
@@ -88,7 +116,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${spaceMono.variable} ${outfit.variable} ${cormorant.variable} ${inter.variable} ${fraunces.variable} ${jakarta.variable} ${caslon.variable} ${manrope.variable}`}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${spaceMono.variable} ${outfit.variable} ${cormorant.variable} ${inter.variable} ${fraunces.variable} ${jakarta.variable} ${caslon.variable} ${manrope.variable} ${neueHaas.variable}`}>
       <body className="font-sans antialiased">
         <ThemeProvider>
           <Header />

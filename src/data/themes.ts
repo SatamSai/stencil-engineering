@@ -3,6 +3,7 @@ export interface ThemeConfig {
   name: string;
   colors: {
     pageBg: string;
+    secondaryPageBg?: string;
     sections: string;
     navFooter: string;
     mainText: string;
@@ -22,16 +23,17 @@ export const THEMES: ThemeConfig[] = [
     name: "Editorial",
     colors: {
       pageBg: "#ffffff",
-      sections: "#ece6db",
+      secondaryPageBg: "#edededb8",
+      sections: "#009FBE",
       navFooter: "#f5f1ea",
       mainText: "#1c1a17",
       secondaryText: "#4a463f",
-      accent: "#3D3A8C",
+      accent: "#0089a4",
       line: "#d9d2c4"
     },
     fonts: {
-      heading: "var(--font-space-grotesk)",
-      body: "var(--font-space-grotesk)"
+      heading: "var(--font-neue-haas)",
+      body: "var(--font-neue-haas)"
     }
   },
   {
@@ -132,8 +134,8 @@ export const THEMES: ThemeConfig[] = [
     line: "#d9d2c4"
   },
   fonts: {
-    heading: "var(--font-inter)",
-    body: "var(--font-inter)"
+    heading: "var(--font-neue-haas)",
+    body: "var(--font-neue-haas)"
   }
 },
 {

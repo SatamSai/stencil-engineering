@@ -11,8 +11,8 @@ export default function AboutPage() {
   return (
     <>
       <section className="px-5 md:px-8 py-16 border-b border-line" id="about">
-        <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(01) &mdash; About Us</div>
-        <p className="font-serif text-[clamp(28px,3vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch]">
+        <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(01) &mdash; About Us</div>
+        <p className="text-[clamp(28px,3vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch]">
           We are leading interior designers and turnkey contractors, specializing in fitouts and corporate interiors since {STENCIL.estd}.
         </p>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -27,9 +27,9 @@ export default function AboutPage() {
 
       <section className="px-5 md:px-8 py-[120px] border-b border-line">
         <div className="max-w-[1400px] mx-auto">
-          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4 mb-4">(02) &mdash; Leadership</div>
+          <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4 mb-4">(02) &mdash; Leadership</div>
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-12 mb-16 items-end border-b border-line pb-12">
-            <h2 className="font-serif italic text-[clamp(28px,3.2vw,48px)] leading-[1.22] tracking-[-0.01em] text-ink">
+            <h2 className="italic text-[clamp(28px,3.2vw,48px)] leading-[1.22] tracking-[-0.01em] text-ink">
               &ldquo;We don&apos;t sell square feet. We sell the certainty that on opening day, the lights will come on, the air will be cold, the floor will be flush, and the brand will feel itself in the room.&rdquo;
             </h2>
           </div>
@@ -64,8 +64,8 @@ export default function AboutPage() {
 
                 {/* Info Below Card */}
                 <div className="bg-transparent">
-                  <div className="font-serif text-[24px] leading-tight mb-1 text-ink">{member.name}</div>
-                  <div className="font-mono text-[10px] tracking-[0.08em] uppercase text-ink-3">{member.role}</div>
+                  <div className="text-[24px] leading-tight mb-1 text-ink">{member.name}</div>
+                  <div className=" text-[10px] tracking-[0.08em] uppercase text-ink-3">{member.role}</div>
                 </div>
               </motion.div>
             ))}
@@ -73,36 +73,46 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-5 md:px-8 py-[120px] bg-bg-2">
+      <section className="px-5 md:px-8 py-[50px]" style={{background:"#edededb8"}}>
         <div className="max-w-[1400px] mx-auto">
-          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4 mb-4">(03) &mdash; Accreditation</div>
-          <h2 className="font-serif text-[clamp(32px,4vw,64px)] tracking-[-0.015em] mb-16 max-w-[15ch]">Built on trust and compliance.</h2>
+          <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4 mb-4">(03) &mdash; Accreditation</div>
+          <h2 className="text-[clamp(32px,4vw,64px)] text-accent tracking-[-0.015em] mb-16 max-w-[15ch]">Built on trust and compliance.</h2>
           
           <CertificationsGallery />
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="px-5 md:px-8 py-[120px] bg-bg-2 border-b border-line">
+      <section className="px-5 md:px-8 py-[120px] border-b border-line">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex justify-between items-baseline mb-16 pb-5 border-b border-line">
             <div>
-              <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(08) &mdash; In their words</div>
-              <h2 className="font-serif text-[clamp(36px,4vw,64px)] tracking-[-0.02em]">Said about us.</h2>
+              <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(08) &mdash; In their words</div>
+              <h2 className="text-[clamp(36px,4vw,64px)] tracking-[-0.02em] text-accent">Said about us.</h2>
             </div>
-            <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 hidden md:block">4.8 &#9733; Google &middot; 60+ reviews</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-line border border-line">
             {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="bg-bg-2 px-9 py-10 flex flex-col gap-7 min-h-[360px]">
-                <span className="font-serif text-[64px] leading-[0.5] text-accent">&ldquo;</span>
-                <p className="font-serif text-[22px] leading-[1.32] tracking-[-0.005em]">{t.quote}</p>
+              <div key={i} className="px-9 py-10 flex flex-col gap-7 min-h-[360px]" style={{background:"#fff"}}>
+                <span className="text-[64px] leading-[0.5] text-accent">&ldquo;</span>
+                <p className="text-[22px] leading-[1.32] tracking-[-0.005em]">{t.quote}</p>
                 <div className="mt-auto flex flex-col gap-1">
                   <span className="text-sm font-medium">{t.name}</span>
-                  <span className="font-mono text-[11px] tracking-[0.06em] uppercase text-ink-3">{t.role}</span>
+                  <span className=" text-[11px] tracking-[0.06em] uppercase text-ink-3">{t.role}</span>
                 </div>
               </div>
             ))}
+          </div>
+          <div className="flex justify-end mt-12 pr-4 md:pr-0">
+            <div className="flex items-center gap-4">
+              <span className="text-[32px] font-serif text-green-600 flex items-baseline leading-none">
+                4.8<span className="text-[20px] ml-1">&#9733;</span>
+              </span>
+              <div className="flex flex-col text-left justify-center border-l border-line pl-4">
+                <span className="text-[13px] font-medium tracking-[0.02em] leading-tight text-ink">Google Reviews</span>
+                <span className="text-[10px] tracking-[0.06em] uppercase text-ink-3 mt-[2px]">Based on 60+ clients</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

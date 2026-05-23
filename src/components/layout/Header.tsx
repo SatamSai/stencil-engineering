@@ -12,8 +12,7 @@ const NAV_ITEMS = [
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "About", href: "/about" },
-  { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "/contact" },
+  { label: "Careers", href: "/careers" }
 ];
 
 export function Header() {
@@ -58,61 +57,26 @@ export function Header() {
           </div>
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden md:flex gap-12 text-base text-ink shrink-1 justify-center">
-          {NAV_ITEMS.map(item => {
-            const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
-            return (
-              <Link
-                key={item.label}
-                href={item.href}
-                className={`whitespace-nowrap transition-colors duration-150 ${
-                  isActive ? "text-accent font-medium border-b border-accent" : "text-ink hover:text-ink-2"
-                }`}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-        </div>
-
-        <div className="flex items-center gap-2.5 shrink-0">
-          {/* Multi-Theme Selector */}
-          <div className="relative group">
-            <button
-              className="p-2 rounded-full hover:bg-ink/5 transition-colors flex items-center gap-2"
-              aria-label="Change theme"
-            >
-              <div className="flex -space-x-1.5">
-                <div className="w-3.5 h-3.5 rounded-full border border-line" style={{ backgroundColor: theme.colors.pageBg }} />
-                <div className="w-3.5 h-3.5 rounded-full border border-line" style={{ backgroundColor: theme.colors.accent }} />
-              </div>
-              <span className="hidden lg:inline text-[10px] font-mono uppercase tracking-[0.05em] text-ink-3">Themes</span>
-            </button>
-            
-            {/* Dropdown */}
-            <div className="absolute right-0 top-full mt-2 w-48 bg-bg border border-line shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[60] py-2">
-              <div className="px-3 pb-2 mb-2 border-b border-line">
-                <span className="text-[9px] font-mono uppercase tracking-[0.1em] text-ink-3">Select System</span>
-              </div>
-              {themes.map((t) => (
-                <button
-                  key={t.id}
-                  onClick={() => setTheme(t.id)}
-                  className={`w-full flex items-center gap-3 px-4 py-2.5 hover:bg-ink/5 transition-colors text-left ${
-                    theme.id === t.id ? "bg-ink/5" : ""
+        {/* Desktop links + Actions */}
+        <div className="flex items-center gap-6 xl:gap-8 shrink-0">
+          <div className="hidden md:flex items-center gap-6 lg:gap-10 xl:gap-12 text-base text-ink justify-end">
+            {NAV_ITEMS.map(item => {
+              const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className={`relative whitespace-nowrap transition-all duration-300 ease-out hover:-translate-y-0.5 ${
+                    isActive ? "text-accent after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-px after:bg-accent after:scale-x-100" : "text-ink hover:text-ink/90 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-px after:bg-ink after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out"
                   }`}
                 >
-                  <div className="w-4 h-4 rounded-full border border-line shrink-0" style={{ backgroundColor: t.colors.accent }} />
-                  <span className={`text-[12px] font-medium ${theme.id === t.id ? "text-accent" : "text-ink"}`}>
-                    {t.name}
-                  </span>
-                </button>
-              ))}
-            </div>
+                  {item.label}
+                </Link>
+              );
+            })}
           </div>
 
-          <Link href="/contact" className="hidden sm:inline-flex text-white px-[18px] py-2.5 rounded-full text-[13px] font-medium tracking-[0.01em]" style={{ backgroundColor: '#009FBE' }}>
+          <Link href="/contact" className="hidden sm:inline-flex text-white px-[18px] py-2.5 rounded-full text-[13px] font-medium tracking-[0.01em] transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:opacity-90 active:scale-95" style={{ backgroundColor: '#009FBE' }}>
             Contact Us &rarr;
           </Link>
 

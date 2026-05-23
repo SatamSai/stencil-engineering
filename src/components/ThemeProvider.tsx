@@ -42,8 +42,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   React.useEffect(() => {
     setMounted(true);
-    const savedThemeId = localStorage.getItem("stencil-theme-v2");
-    const foundTheme = THEMES.find(t => t.id === savedThemeId) || THEMES[0];
+    const foundTheme = THEMES[0];
     setCurrentTheme(foundTheme);
     applyTheme(foundTheme);
   }, []);
@@ -52,7 +51,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const theme = THEMES.find(t => t.id === id);
     if (theme) {
       setCurrentTheme(theme);
-      localStorage.setItem("stencil-theme-v2", id);
       applyTheme(theme);
     }
   };

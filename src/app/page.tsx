@@ -7,7 +7,7 @@ import { STENCIL, SERVICES, SECTORS, STATS, CLIENTS, PROCESS, TESTIMONIALS, TEAM
 import projectsData from "@/data/projects.json";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { ImageViewerModal } from "@/components/projects/ImageViewerModal";
-import { motion, AnimatePresence, useInView, animate } from "framer-motion";
+import { motion, AnimatePresence, useInView, animate, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { CertificationsGallery } from "@/components/ui/CertificationsGallery";
 
@@ -37,6 +37,10 @@ function AnimatedNumber({ value, decimals = 0 }: { value: number; decimals?: num
 }
 
 export default function HomePage() {
+  const { scrollY } = useScroll();
+  const yImage = useTransform(scrollY, [0, 1000], [0, 250]);
+  const yText = useTransform(scrollY, [0, 1000], [0, 100]);
+
   const [selectedProject, setSelectedProject] = useState<typeof projectsData[0] | null>(null);
   const [filter, setFilter] = useState("All");
   
@@ -68,48 +72,50 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative h-[92vh] min-h-[680px] overflow-hidden bg-ink">
-        <Image
-          src="/DSC_1684-scaled.jpg"
-          alt="Stencil Engineering project interior"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover brightness-[0.5] saturate-[1.05]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
-        <div className="relative h-full px-5 md:px-10 py-10 flex flex-col justify-center text-white">
+        <motion.div style={{ y: yImage }} className="absolute -inset-[15%] z-0">
+          <Image
+            src="/DSC_1684-scaled.jpg"
+            alt="Stencil Engineering project interior"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover brightness-[0.5] saturate-[1.05]"
+          />
+        </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30 z-10 pointer-events-none" />
+        <motion.div style={{ y: yText }} className="relative z-20 h-full px-5 md:px-10 py-10 flex flex-col justify-center text-white">
           <div className="absolute top-10 right-5 md:right-10 flex justify-end font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">
             <span>Est. {STENCIL.estd}</span>
           </div>
           <div className="flex flex-col gap-6 max-w-3xl">
-            <h1 className="font-sans font-bold text-[clamp(48px,8vw,120px)] leading-[0.92] tracking-[-0.03em]">
+            <h1 className="font-sans font-normal text-[clamp(48px,8vw,120px)] leading-[0.92] tracking-[-0.03em]">
               Delivering on<br />our promises
             </h1>
-            <p className="text-[clamp(14px,1.3vw,18px)] text-white/70 font-normal leading-relaxed max-w-[44ch]">
+            <p className="text-[clamp(14px,1.5vw,32px)] text-white font-normal leading-relaxed max-w-[44ch]">
               Leading Interior Designers &amp; Turnkey Contractors since 1989. Delivering excellence across India.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="#projects"
-                className="inline-flex items-center gap-2 bg-white text-ink font-semibold text-[13px] tracking-[0.04em] uppercase px-6 py-3 rounded-full hover:bg-white/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-ink text-[16px] tracking-[0.04em] px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-lg hover:bg-white/95"
               >
                 View Projects
               </Link>
               <Link
                 href="#contact"
-                className="inline-flex items-center gap-2 border border-white/60 text-white font-semibold text-[13px] tracking-[0.04em] uppercase px-6 py-3 rounded-full hover:bg-white/10 transition-colors"
+                className="inline-flex items-center gap-2 border border-white/60 text-white text-[16px] tracking-[0.04em] px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-[1.03] hover:bg-white/10 hover:border-white"
               >
                 Contact Us
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Intro */}
       <section className="px-5 md:px-8 py-16 border-b border-line" id="about">
-        <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">About Us</div>
-        <p className="font-serif text-[clamp(28px,3vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch]">
+        <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">About Us</div>
+        <p className="font-serif text-[clamp(28px,3vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch] text-accent">
           We are leading interior designers and turnkey contractors, specializing in fitouts and corporate interiors.
         </p>
         <div className="mt-9 grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -125,9 +131,9 @@ export default function HomePage() {
       {/* Services */}
       <section className="px-5 md:px-8 py-16 border-b border-line" style={{background: '#edededb8'}} id="services">
         <div className="max-w-[1400px] mx-auto">
-         <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Services</div>
+         <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Services</div>
           <div style={{marginBottom: '48px'}}>
-            <h2 className="font-serif text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em] max-w-[14ch]" style={{color: '#3D3A8C'}}>One contract.<br />Every discipline.</h2>
+            <h2 className="text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em] max-w-[14ch]">One contract.<br />Every discipline.</h2>
             <p className="mt-6 text-[15px] leading-relaxed text-ink-2 max-w-[52ch]">
               From the first space-planning sketch to the BMS commissioning report, we hold every trade in-house &mdash; so handovers are seams you don&apos;t see, and the client signs one contract, not twelve.
             </p>
@@ -135,7 +141,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-line">
             {SERVICES.map((s, i) => (
               <div key={s} className="flex items-baseline gap-[10px] py-[20px] pr-[10px] pl-0 border-b border-line hover:pl-3 transition-[padding-left] duration-200">
-                <span className="font-mono text-[11px] text-ink-3 min-w-7">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-[11px] text-ink-3 min-w-7 text-accent">{String(i + 1).padStart(2, "0")}</span>
                 <span className="font-serif text-[26px] leading-[1.05] tracking-[-0.01em]">{s}</span>
               </div>
             ))}
@@ -144,19 +150,19 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <section style={{background: '#007A8C'}} className="text-bg px-8 py-[65px]">
+      <section style={{background: '#009FBE'}} className="text-bg px-8 py-[65px]">
         <div className="max-w-[1400px] mx-auto">
-          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-bg/60 mb-14">
+          <div className=" text-[11px] tracking-[0.1em] uppercase text-bg/60 mb-14">
             <span>In Numbers</span>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12">
             {STATS.map((s, i) => (
-              <div key={i} className="flex flex-col">
+              <div key={i} className="flex flex-col items-center">
                 <div className="font-serif text-[clamp(56px,6.5vw,100px)] leading-[0.9] tracking-[-0.03em] flex items-baseline">
                   <AnimatedNumber value={s.val} decimals={s.decimals} />
                   <span className="ml-1">{s.suffix}</span>
                 </div>
-                <div className="font-mono text-xs tracking-[0.08em] uppercase text-bg/65 mt-4">{s.l}</div>
+                <div className="text-xs tracking-[0.08em] uppercase text-bg/65 mt-4">{s.l}</div>
               </div>
             ))}
           </div>
@@ -168,10 +174,10 @@ export default function HomePage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="flex justify-between items-end mb-16">
             <div>
-              <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(04) &mdash; Selected Work</div>
-              <h2 className="font-serif text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em]">Featured<br />Projects.</h2>
+              <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(04) &mdash; Selected Work</div>
+              <h2 className="font-serif text-[clamp(36px,4.6vw,76px)] leading-none tracking-[-0.02em] text-accent">Featured<br />Projects.</h2>
             </div>
-            <Link href="/projects" className="hidden sm:inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] uppercase text-ink group">
+            <Link href="/projects" className="hidden sm:inline-flex items-center gap-2 text-[11px] tracking-[0.1em] uppercase text-ink group">
               View all projects <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
             </Link>
           </div>
@@ -191,8 +197,8 @@ export default function HomePage() {
       <section className="border-b border-line overflow-hidden" id="clients">
         <div className="flex justify-between items-baseline px-5 md:px-8 py-16 pb-8 max-w-[1400px] mx-auto">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Clientele</div>
-            <h2 className="font-serif text-[clamp(28px,3.2vw,48px)] tracking-[-0.015em]">In good company.</h2>
+            <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">Clientele</div>
+            <h2 className="font-serif text-accent text-[clamp(28px,3.2vw,48px)] tracking-[-0.015em]">In good company.</h2>
           </div>
         </div>
         <div className="relative overflow-hidden py-12 bg-white/40 flex flex-col gap-6">
@@ -224,7 +230,7 @@ export default function HomePage() {
       <section className="bg-bg-2 border-b border-line px-5 md:px-8 py-16" style={{background: '#edededb8'}}>
         <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-12 md:gap-16">
           <div className="max-w-[40ch] text-center">
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-4">Accredited Excellence</div>
+            <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 mb-4">Accredited Excellence</div>
             <h3 className="font-serif text-[clamp(28px,3vw,40px)] tracking-[-0.01em] leading-tight">Industry recognized quality &amp; safety standards.</h3>
           </div>
           
@@ -233,15 +239,15 @@ export default function HomePage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="px-5 md:px-8 py-[120px] bg-ink text-bg text-center" id="contact" style={{background: '#007A8C'}}>
+      <section className="px-5 md:px-8 py-[120px] bg-white text-bg text-center" id="contact">
         <div className="max-w-[1400px] mx-auto">
-          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-8">(10) &mdash; Contact</div>
-          <h2 className="font-serif text-[clamp(40px,5vw,80px)] leading-[1.1] tracking-[-0.02em] mb-12 max-w-[15ch] mx-auto">
+          <div className="text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-8">(10) &mdash; Contact</div>
+          <h2 className="font-serif text-[clamp(40px,5vw,80px)] text-accent leading-[1.1] tracking-[-0.02em] mb-12 max-w-[15ch] mx-auto">
             Ready to build your next space?
           </h2>
           <Link 
             href="/contact" 
-            className="inline-flex items-center gap-4 px-12 py-6 text-bg rounded-full text-lg font-medium transition-transform hover:scale-105 active:scale-95" style={{ backgroundColor: '#009FBE' }}
+            className="inline-flex items-center gap-4 px-12 py-6 bg-accent rounded-full text-lg font-medium transition-transform hover:scale-105 active:scale-95"
           >
             Get in touch &rarr;
           </Link>
