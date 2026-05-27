@@ -21,7 +21,8 @@ function ProjectsContent() {
   const types = ["All", ...Array.from(new Set(projectsData.map(p => p.type).filter(t => t && t.trim() !== "")))];
   
   const filter = urlType && types.includes(urlType) ? urlType : "All";
-  const filteredProjects = filter === "All" ? projectsData : projectsData.filter(p => p.type === urlType);
+  const sortedProjects = [...projectsData].sort((a, b) => new Date(b.completionDate).getTime() - new Date(a.completionDate).getTime());
+  const filteredProjects = filter === "All" ? sortedProjects : sortedProjects.filter(p => p.type === urlType);
   
   const displayedProjects = filteredProjects.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProjects.length;

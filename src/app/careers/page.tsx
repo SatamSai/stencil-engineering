@@ -16,13 +16,13 @@ export default function CareersPage() {
   return (
     <>
       <div className="border-b border-line">
-        <div className="px-5 md:px-8 py-20">
+        <div className="p-8 pt-16">
           <div className="max-w-[1400px] mx-auto">
-            <div className=" text-[11px] tracking-[0.1em] uppercase text-bg/55 mb-4">(01) &mdash; Careers</div>
-            <h1 className="font-serif text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch] text-bg-2">
+            <div className="text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Careers</div>
+            <h1 className="text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch] text-bg-2">
               Join the<br />team.
             </h1>
-            <p className="mt-6 text-[18px] leading-relaxed text-bg/75 max-w-[52ch]">
+            <p className="mt-6 text-[20px] leading-relaxed text-bg/75 max-w-[52ch]">
               We are always looking for people who enjoy a challenge and have a thirst for knowledge.
             </p>
           </div>
@@ -33,9 +33,9 @@ export default function CareersPage() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-20">
             {/* Left Column: Text */}
-            <div className="space-y-10">
+            <div className="space-y-10 text-[17px]">
               <div className="space-y-4">
-                <h2 className="font-serif text-[clamp(28px,3vw,42px)] leading-tight tracking-[-0.01em]">
+                <h2 className="font-serif text-[clamp(28px,3.1vw,48px)] leading-tight tracking-[-0.01em]">
                   You enjoy a challenge?
                 </h2>
                 <p className="text-ink-2 leading-relaxed">

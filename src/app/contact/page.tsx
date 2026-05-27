@@ -10,10 +10,10 @@ export default function ContactPage() {
     <>
       <section className="" id="contact">
         <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-16 mb-[72px] px-5 md:px-8 py-[120px]" style={{backgroundColor:"#edededb8"}}>
-            <div className=" text-[11px] tracking-[0.1em] uppercase text-bg/55">(01) &mdash; Start a project</div>
+          <div className="gap-16 mb-[72px] p-8 pt-16" style={{backgroundColor:"#edededb8"}}>
+            <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2 text-bg/55">Start a project</div>
             <div>
-              <h1 className="text-[clamp(48px,6.5vw,120px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch]">Tell us about<br />the <em className="italic text-accent">space</em>.</h1>
+              <h1 className="text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch]">Tell us about<br />the <em className="italic text-accent">space</em>.</h1>
               <p className="mt-6 text-[15px] leading-relaxed text-bg/75 max-w-[52ch]">
                 A quick brief is enough to get started. We&apos;ll come back within one working day with a few questions and a sense of the path forward &mdash; at no obligation.
               </p>
@@ -49,22 +49,22 @@ export default function ContactPage() {
                 {submitted ? "✓ Brief received — we'll be in touch" : "Send brief →"}
               </button>
             </form>
-            <div className="flex flex-col gap-9">
-              <div className="pb-6 border-b border-bg/[.18]">
-                <div className=" text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Speak with a project lead</div>
-                <div className="text-[28px] tracking-[-0.01em] leading-[1.2]">{STENCIL.phone}</div>
+            <div className="flex flex-col gap-2">
+              <div className="pb-2 mb-4 border-b border-bg/[.18]">
+                <div className="text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Speak with a project lead</div>
+                <div className="text-[15px] tracking-[-0.01em] leading-[1.2] py-2">{STENCIL.phone}</div>
               </div>
-              <div className="pb-6 border-b border-bg/[.18]">
-                <div className=" text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Email</div>
-                <div className="text-[28px] tracking-[-0.01em] leading-[1.2]">{STENCIL.email}</div>
+              <div className="pb-2 mb-4 border-b border-bg/[.18]">
+                <div className="text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Email</div>
+                <div className="text-[15px] tracking-[-0.01em] leading-[1.2] py-2">{STENCIL.email}</div>
               </div>
-              <div className="pb-6 border-b border-bg/[.18]">
-                <div className=" text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Studio</div>
-                <div className="text-[28px] tracking-[-0.01em] leading-[1.2]">{STENCIL.address}</div>
+              <div className="pb-2 mb-4 border-b border-bg/[.18]">
+                <div className="text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Studio</div>
+                <div className="text-[15px] tracking-[-0.01em] leading-[1.2] py-2">{STENCIL.address}</div>
               </div>
-              <div className="pb-6 border-b border-bg/[.18]">
-                <div className=" text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Hours</div>
-                <div className="text-[28px] tracking-[-0.01em] leading-[1.2]">Mon&ndash;Sat &middot; 09:30 &ndash; 19:00 IST</div>
+              <div className="pb-2 mb-4 border-b border-bg/[.18]">
+                <div className="text-[11px] tracking-[0.08em] uppercase text-bg/55 mb-3">Hours</div>
+                <div className="text-[15px] tracking-[-0.01em] leading-[1.2] py-2">Mon&ndash;Sat &middot; 09:30 &ndash; 19:00 IST</div>
               </div>
             </div>
           </div>

@@ -88,7 +88,7 @@ export default function HomePage() {
             <span>Est. {STENCIL.estd}</span>
           </div>
           <div className="flex flex-col gap-6 max-w-3xl">
-            <h1 className="font-sans font-normal text-[clamp(48px,8vw,120px)] leading-[0.92] tracking-[-0.03em]">
+            <h1 className="font-sans font-normal text-[clamp(48px,8vw,120px)] leading-[1.05] tracking-[-0.03em]">
               Delivering on<br />our promises
             </h1>
             <p className="text-[clamp(14px,1.5vw,32px)] text-white font-normal leading-relaxed max-w-[44ch]">

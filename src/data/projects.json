@@ -7,6 +7,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2018-05-01",
     "type": "Corporate",
+    "featured": false,
     "images": [
       "/All-Site-Pics/Abbott/DSC_0039.JPG",
       "/All-Site-Pics/Abbott/DSC_0122.JPG",
@@ -21,6 +22,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2023-02-01",
     "type": "Education",
+    "featured": false,
     "images": [
       "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.11.06\u202fPM.png",
       "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.11.19\u202fPM.png",
@@ -60,6 +62,7 @@
     "location": "Hyderabad - Telangana",
     "completionDate": "2024-03-01",
     "type": "Corporate",
+    "featured": false,
     "images": [
       "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.38 PM (1).jpeg",
       "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.39 PM.jpeg",
@@ -81,6 +84,7 @@
     "location": "Pune - Maharashtra",
     "completionDate": "2024-03-01",
     "type": "Corporate",
+    "featured": false,
     "images": [
       "/All-Site-Pics/Axtria-Pune/Axtria_Hinjewadi Pune_1.jpg",
       "/All-Site-Pics/Axtria-Pune/Axtria_Hinjewadi Pune_5.jpg"
@@ -174,6 +178,7 @@
     "location": "Bangalore - Karnataka",
     "completionDate": "2026-02-01",
     "type": "Corporate",
+    "featured": true,
     "images": [
       "/All-Site-Pics/DSP Mutual Fund Bangalore/6.jpg",
       "/All-Site-Pics/DSP Mutual Fund Bangalore/9.jpg",
@@ -283,6 +288,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2023-06-01",
     "type": "Corporate",
+    "featured": true,
     "images": [
       "/All-Site-Pics/Karix/DSC_1428-scaled.jpg",
       "/All-Site-Pics/Karix/DSC_1527-scaled.jpg",
@@ -420,6 +426,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2025-11-01",
     "type": "Healthcare",
+    "featured": true,
     "images": [
       "/All-Site-Pics/St_Jude/Screenshot 2026-04-15 at 7.01.59\u202fPM.png",
       "/All-Site-Pics/St_Jude/Screenshot 2026-04-15 at 7.02.09\u202fPM.png",
@@ -485,6 +492,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2025-11-01",
     "type": "Corporate",
+    "featured": true,
     "images": [
       "/All-Site-Pics/Wipro-Mumbai/DSC_1029.jpg",
       "/All-Site-Pics/Wipro-Mumbai/DSC_1036.jpg",

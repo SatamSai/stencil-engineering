@@ -43,7 +43,7 @@ export function Header() {
       {/* Spacer to prevent CLS when the fixed nav is active */}
       <div className="h-[88px] w-full" />
 
-      <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between gap-6 bg-bg border-b border-line transition-all duration-300 ease-in-out ${scrolled ? "py-2.5 px-4 md:px-7" : "py-[18px] px-4 md:px-7"}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between gap-6 bg-bg shadow-[0_1px_12px_0_rgba(0,0,0,0.07)] transition-all duration-300 ease-in-out ${scrolled ? "py-2.5 px-4 md:px-7" : "py-[18px] px-4 md:px-7"}`}>
         <Link href="/" className="flex items-center gap-3 shrink-0 relative">
           <div className={`relative transition-all duration-300 ease-in-out ${scrolled ? "h-[34px] w-[140px]" : "h-[52px] w-[214px]"}`}>
             <Image
