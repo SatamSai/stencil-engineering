@@ -8,11 +8,7 @@
     "completionDate": "2018-05-01",
     "type": "Corporate",
     "featured": false,
-    "images": [
-      "/All-Site-Pics/Abbott/DSC_0039.JPG",
-      "/All-Site-Pics/Abbott/DSC_0122.JPG",
-      "/All-Site-Pics/Abbott/DSC_0561.JPG"
-    ]
+    "folder": "Abbott"
   },
   {
     "id": "atlas-phase-1-2023",
@@ -23,18 +19,7 @@
     "completionDate": "2023-02-01",
     "type": "Education",
     "featured": false,
-    "images": [
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.11.06\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.11.19\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.11.40\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.12.18\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.13.01\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.13.40\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.14.03\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.14.27\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.15.03\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.15.25\u202fPM.png"
-    ]
+    "folder": "Atlas-Phase-1-2023"
   },
   {
     "id": "atlas-phase-2-2024",
@@ -44,15 +29,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2025-11-01",
     "type": "Education",
-    "images": [
-      "/All-Site-Pics/Atlas-Phase-2-2024/Screenshot 2026-04-22 at 4.00.50\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-2-2024/Screenshot 2026-04-22 at 4.01.34\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-2-2024/Screenshot 2026-04-22 at 4.02.33\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-2-2024/Screenshot 2026-04-22 at 4.03.15\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-2-2024/Screenshot 2026-04-22 at 4.03.24\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-2-2024/Screenshot 2026-04-22 at 4.03.37\u202fPM.png",
-      "/All-Site-Pics/Atlas-Phase-2-2024/Screenshot 2026-04-22 at 4.05.14\u202fPM.png"
-    ]
+    "folder": "Atlas-Phase-2-2024"
   },
   {
     "id": "axtria-hyderabad",
@@ -63,18 +40,7 @@
     "completionDate": "2024-03-01",
     "type": "Corporate",
     "featured": false,
-    "images": [
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.38 PM (1).jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.39 PM.jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.41 PM.jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.46 PM (2).jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.46 PM.jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.47 PM.jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.48 PM (2).jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.49 PM (2).jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.51 PM (2).jpeg",
-      "/All-Site-Pics/Axtria-Hyderabad/WhatsApp Image 2024-03-13 at 7.29.51 PM.jpeg"
-    ]
+    "folder": "Axtria-Hyderabad"
   },
   {
     "id": "axtria-pune",
@@ -85,10 +51,7 @@
     "completionDate": "2024-03-01",
     "type": "Corporate",
     "featured": false,
-    "images": [
-      "/All-Site-Pics/Axtria-Pune/Axtria_Hinjewadi Pune_1.jpg",
-      "/All-Site-Pics/Axtria-Pune/Axtria_Hinjewadi Pune_5.jpg"
-    ]
+    "folder": "Axtria-Pune"
   },
   {
     "id": "bombay-international-school",
@@ -98,10 +61,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2020-11-01",
     "type": "Education",
-    "images": [
-      "/All-Site-Pics/Bombay_International_School/mo-of---mobile-offices-bombay-international-school--b.i.s.--primary-schools-archello.1666954706.7681.jpg",
-      "/All-Site-Pics/Bombay_International_School/mo-of---mobile-offices-bombay-international-school--b.i.s.--primary-schools-archello.1666954842.7564.jpg"
-    ]
+    "folder": "Bombay_International_School"
   },
   {
     "id": "booking.com",
@@ -111,16 +71,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2018-03-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-1.jpg",
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-12.jpg",
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-3.jpg",
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-4.jpg",
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-5.jpg",
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-6.jpg",
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-7.jpg",
-      "/All-Site-Pics/Booking.com/booking-mumbai-office-8.jpg"
-    ]
+    "folder": "Booking.com"
   },
   {
     "id": "club-mahindra-ashtamudi",
@@ -130,14 +81,7 @@
     "location": "Astamudi - Kerala",
     "completionDate": "2019-06-01",
     "type": "Hospitality",
-    "images": [
-      "/All-Site-Pics/Club_Mahindra_Ashtamudi/00bb1e4752458ab4bda8169ced702601.jpg",
-      "/All-Site-Pics/Club_Mahindra_Ashtamudi/44ddf465ef9d804fd7bd5bda44ac88a2.jpg",
-      "/All-Site-Pics/Club_Mahindra_Ashtamudi/492242818.jpg",
-      "/All-Site-Pics/Club_Mahindra_Ashtamudi/d79922e4a0d408e11a483cebfbaeaf7c.jpg",
-      "/All-Site-Pics/Club_Mahindra_Ashtamudi/e47110492bcadf1efe8c1dd65a4bda5b.jpg",
-      "/All-Site-Pics/Club_Mahindra_Ashtamudi/fcd836815e72ec0ebb750d1f25a8e422.jpg"
-    ]
+    "folder": "Club_Mahindra_Ashtamudi"
   },
   {
     "id": "club-mahindra-goa",
@@ -147,13 +91,7 @@
     "location": "Goa",
     "completionDate": "2019-09-01",
     "type": "Hospitality",
-    "images": [
-      "/All-Site-Pics/Club_Mahindra_Goa/288746508.jpg",
-      "/All-Site-Pics/Club_Mahindra_Goa/288746515_proc.jpg",
-      "/All-Site-Pics/Club_Mahindra_Goa/288747385.jpg",
-      "/All-Site-Pics/Club_Mahindra_Goa/288747817_proc.jpg",
-      "/All-Site-Pics/Club_Mahindra_Goa/83a181f8651f34e57feac30d0668c074_proc.jpg"
-    ]
+    "folder": "Club_Mahindra_Goa"
   },
   {
     "id": "concast-2022",
@@ -163,12 +101,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2021-03-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Concast-2022/studio-design-inc-concast-offices-archello.1693300654.3554.jpg",
-      "/All-Site-Pics/Concast-2022/studio-design-inc-concast-offices-archello.1693300656.248.jpg",
-      "/All-Site-Pics/Concast-2022/studio-design-inc-concast-offices-archello.1693300659.7051.jpg",
-      "/All-Site-Pics/Concast-2022/studio-design-inc-concast-offices-archello.1693300661.4226.jpg"
-    ]
+    "folder": "Concast-2022"
   },
   {
     "id": "dsp-mutual-fund-bangalore",
@@ -179,13 +112,7 @@
     "completionDate": "2026-02-01",
     "type": "Corporate",
     "featured": true,
-    "images": [
-      "/All-Site-Pics/DSP Mutual Fund Bangalore/6.jpg",
-      "/All-Site-Pics/DSP Mutual Fund Bangalore/9.jpg",
-      "/All-Site-Pics/DSP Mutual Fund Bangalore/DSC_6566-HDR.jpg",
-      "/All-Site-Pics/DSP Mutual Fund Bangalore/DSC_6577-HDR-2.jpg",
-      "/All-Site-Pics/DSP Mutual Fund Bangalore/DSC_6583.jpg"
-    ]
+    "folder": "DSP Mutual Fund Bangalore"
   },
   {
     "id": "epicor",
@@ -195,10 +122,7 @@
     "location": "Bangalore - Karnataka",
     "completionDate": "2023-01-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Epicor/central-work-cafe-epicor-bangalore-india.jpeg",
-      "/All-Site-Pics/Epicor/epicor-bangalore-flexible-workplace-design.jpeg"
-    ]
+    "folder": "Epicor"
   },
   {
     "id": "equinox",
@@ -208,14 +132,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2021-03-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg",
-      "/All-Site-Pics/Equinox/DSC_0068-HDR-Edit-2.jpg",
-      "/All-Site-Pics/Equinox/DSC_0396.JPG",
-      "/All-Site-Pics/Equinox/DSC_0421.JPG",
-      "/All-Site-Pics/Equinox/DSC_0427.JPG",
-      "/All-Site-Pics/Equinox/https___cloudfront-us-east-1.images.arcpublishing.com_brookfieldproperties_73YN36CSEFBRJLU4HLP55IY3NQ.avif"
-    ]
+    "folder": "Equinox"
   },
   {
     "id": "hcg-manavata-cancer-centre-nashik",
@@ -225,15 +142,7 @@
     "location": "Nashik - Maharashtra",
     "completionDate": "2018-04-01",
     "type": "Healthcare",
-    "images": [
-      "/All-Site-Pics/HCG_Manavata_Cancer_Centre_Nashik/IMG_0755.JPG",
-      "/All-Site-Pics/HCG_Manavata_Cancer_Centre_Nashik/IMG_0823.JPG",
-      "/All-Site-Pics/HCG_Manavata_Cancer_Centre_Nashik/IMG_1067.JPG",
-      "/All-Site-Pics/HCG_Manavata_Cancer_Centre_Nashik/IMG_1576.jpg",
-      "/All-Site-Pics/HCG_Manavata_Cancer_Centre_Nashik/IMG_1696.jpg",
-      "/All-Site-Pics/HCG_Manavata_Cancer_Centre_Nashik/IMG_1723.jpg",
-      "/All-Site-Pics/HCG_Manavata_Cancer_Centre_Nashik/IMG_2496.jpg"
-    ]
+    "folder": "HCG_Manavata_Cancer_Centre_Nashik"
   },
   {
     "id": "johnson-&-johnson",
@@ -243,12 +152,7 @@
     "location": "Hyderabad - Telangana",
     "completionDate": "2018-04-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Johnson & Johnson/CAFE VIEW 01.jpg",
-      "/All-Site-Pics/Johnson & Johnson/PHOTOS (1).jpg",
-      "/All-Site-Pics/Johnson & Johnson/PHOTOS (3).jpg",
-      "/All-Site-Pics/Johnson & Johnson/THINK AREA.jpg"
-    ]
+    "folder": "Johnson & Johnson"
   },
   {
     "id": "kmrl",
@@ -258,12 +162,7 @@
     "location": "Kochi - Kerala",
     "completionDate": "2020-03-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/KMRL/1-31-1600x900.jpg",
-      "/All-Site-Pics/KMRL/AMxtsFF.jpg",
-      "/All-Site-Pics/KMRL/DSC_0176.JPG",
-      "/All-Site-Pics/KMRL/WhatsApp Image 2020-02-23 at 10.18.35 (2).jpeg"
-    ]
+    "folder": "KMRL"
   },
   {
     "id": "ksitil",
@@ -273,12 +172,7 @@
     "location": "Kochi - Kerala",
     "completionDate": "2022-01-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/KSITIL/RMP_2060.JPG",
-      "/All-Site-Pics/KSITIL/RMP_2075.JPG",
-      "/All-Site-Pics/KSITIL/RMP_2079.JPG",
-      "/All-Site-Pics/KSITIL/RMP_2127.JPG"
-    ]
+    "folder": "KSITIL"
   },
   {
     "id": "karix",
@@ -289,16 +183,7 @@
     "completionDate": "2023-06-01",
     "type": "Corporate",
     "featured": true,
-    "images": [
-      "/All-Site-Pics/Karix/DSC_1428-scaled.jpg",
-      "/All-Site-Pics/Karix/DSC_1527-scaled.jpg",
-      "/All-Site-Pics/Karix/DSC_1581-scaled.jpg",
-      "/All-Site-Pics/Karix/DSC_1612-scaled.jpg",
-      "/All-Site-Pics/Karix/DSC_1624-scaled.jpg",
-      "/All-Site-Pics/Karix/DSC_1650-scaled.jpg",
-      "/All-Site-Pics/Karix/DSC_1684-scaled.jpg",
-      "/All-Site-Pics/Karix/YKP_3692-scaled.jpg"
-    ]
+    "folder": "Karix"
   },
   {
     "id": "marriot-goa",
@@ -308,12 +193,7 @@
     "location": "Goa - Panji",
     "completionDate": "2019-06-01",
     "type": "Hospitality",
-    "images": [
-      "/All-Site-Pics/Marriot_Goa/WhatsApp Image 2024-12-03 at 1.53.17 PM (1).jpeg",
-      "/All-Site-Pics/Marriot_Goa/WhatsApp Image 2024-12-03 at 1.53.18 PM (1).jpeg",
-      "/All-Site-Pics/Marriot_Goa/WhatsApp Image 2024-12-03 at 1.53.18 PM.jpeg",
-      "/All-Site-Pics/Marriot_Goa/WhatsApp Image 2024-12-03 at 1.53.20 PM.jpeg"
-    ]
+    "folder": "Marriot_Goa"
   },
   {
     "id": "marriot-jodhpur",
@@ -323,13 +203,7 @@
     "location": "Jodhpur - Rajasthan",
     "completionDate": "2019-09-01",
     "type": "Hospitality",
-    "images": [
-      "/All-Site-Pics/Marriot_Jodhpur/fi-jdhfi-deluxe-twin-19466-Classic-Hor.jpeg",
-      "/All-Site-Pics/Marriot_Jodhpur/fi-jdhfi-kava-buffet-12293-Classic-Hor.jpeg",
-      "/All-Site-Pics/Marriot_Jodhpur/fi-jdhfi-suite-bedroom-14859-Classic-Hor.jpeg",
-      "/All-Site-Pics/Marriot_Jodhpur/jdhfi-business-0030-hor-clsc.jpg",
-      "/All-Site-Pics/Marriot_Jodhpur/jdhfi-exterior-5569-hor-clsc.jpg"
-    ]
+    "folder": "Marriot_Jodhpur"
   },
   {
     "id": "mercedes-benz",
@@ -339,11 +213,7 @@
     "location": "Mumbai, Rajkot, Raipur, Nagpur, Kolkata, Bhopal, Surat",
     "completionDate": "2019-03-01",
     "type": "Retail",
-    "images": [
-      "/All-Site-Pics/Mercedes_Benz/20171215105002_Landmark-Cars,-Thane.jpg",
-      "/All-Site-Pics/Mercedes_Benz/Auto-Hangar-Showroom-2.jpg.webp",
-      "/All-Site-Pics/Mercedes_Benz/L9.jpg"
-    ]
+    "folder": "Mercedes_Benz"
   },
   {
     "id": "narayana-hrudayalaya-limited",
@@ -353,21 +223,7 @@
     "location": "Bangalore - Karnataka",
     "completionDate": "2016-10-01",
     "type": "Healthcare",
-    "images": [
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3639.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3684.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3852.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3855.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3894.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3900.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3993.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_3999.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_4014.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/DSC_4057.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/_DSC0039.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/_DSC0076.jpg",
-      "/All-Site-Pics/Narayana Hrudayalaya Limited/_DSC0090.jpg"
-    ]
+    "folder": "Narayana Hrudayalaya Limited"
   },
   {
     "id": "nokia",
@@ -377,12 +233,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2018-10-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Nokia/DSC_0245.JPG",
-      "/All-Site-Pics/Nokia/DSC_0246.JPG",
-      "/All-Site-Pics/Nokia/DSC_0254.JPG",
-      "/All-Site-Pics/Nokia/DSC_0256.JPG"
-    ]
+    "folder": "Nokia"
   },
   {
     "id": "olive-upgrad-education",
@@ -392,17 +243,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2023-10-01",
     "type": "Education",
-    "images": [
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-1-1536x1022.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-11-1536x1023.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-12-1536x1022.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-2-1536x1022.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-4-1536x1023.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-5-1536x1022.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-6-1536x1022.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-7-1536x1022.jpg",
-      "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-8-1536x1015.jpg"
-    ]
+    "folder": "Olive_UpGrad_Education"
   },
   {
     "id": "shoppers-stop",
@@ -412,11 +253,7 @@
     "location": "Bangalore, Gurgaon, Kochi, Trivandrum",
     "completionDate": "2021-12-01",
     "type": "Retail",
-    "images": [
-      "/All-Site-Pics/Shoppers_Stop/WhatsApp Image 2020-02-13 at 16.57.09 (3).jpeg",
-      "/All-Site-Pics/Shoppers_Stop/WhatsApp Image 2020-02-13 at 16.57.11 (2).jpeg",
-      "/All-Site-Pics/Shoppers_Stop/WhatsApp Image 2020-02-13 at 16.57.12 (1).jpeg"
-    ]
+    "folder": "Shoppers_Stop"
   },
   {
     "id": "st-jude",
@@ -427,15 +264,7 @@
     "completionDate": "2025-11-01",
     "type": "Healthcare",
     "featured": true,
-    "images": [
-      "/All-Site-Pics/St_Jude/Screenshot 2026-04-15 at 7.01.59\u202fPM.png",
-      "/All-Site-Pics/St_Jude/Screenshot 2026-04-15 at 7.02.09\u202fPM.png",
-      "/All-Site-Pics/St_Jude/Screenshot 2026-04-15 at 7.02.37\u202fPM.png",
-      "/All-Site-Pics/St_Jude/WhatsApp Image 2026-01-02 at 11.08.41 (1).jpeg",
-      "/All-Site-Pics/St_Jude/WhatsApp Image 2026-01-02 at 11.08.45 (1).jpeg",
-      "/All-Site-Pics/St_Jude/WhatsApp Image 2026-01-02 at 11.08.46.jpeg",
-      "/All-Site-Pics/St_Jude/WhatsApp Image 2026-01-02 at 11.09.00.jpeg"
-    ]
+    "folder": "St_Jude"
   },
   {
     "id": "tn-shukla",
@@ -445,14 +274,7 @@
     "location": "Jabalpur - Madhya Pradesh",
     "completionDate": "2025-12-01",
     "type": "Healthcare",
-    "images": [
-      "/All-Site-Pics/TN-Shukla/2.webp",
-      "/All-Site-Pics/TN-Shukla/WhatsApp Image 2026-01-02 at 10.59.13.jpeg",
-      "/All-Site-Pics/TN-Shukla/WhatsApp Image 2026-01-02 at 10.59.14 (1).jpeg",
-      "/All-Site-Pics/TN-Shukla/WhatsApp Image 2026-01-02 at 10.59.14 (2).jpeg",
-      "/All-Site-Pics/TN-Shukla/WhatsApp Image 2026-01-02 at 10.59.15 (1).jpeg",
-      "/All-Site-Pics/TN-Shukla/WhatsApp Image 2026-01-02 at 10.59.15 (2).jpeg"
-    ]
+    "folder": "TN-Shukla"
   },
   {
     "id": "takasago",
@@ -462,13 +284,7 @@
     "location": "Bangalore - Karnataka",
     "completionDate": "2025-07-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Takasago/WhatsApp Image 2024-03-28 at 6.10.26 PM (2).jpeg",
-      "/All-Site-Pics/Takasago/WhatsApp Image 2024-03-28 at 6.10.26 PM.jpeg",
-      "/All-Site-Pics/Takasago/WhatsApp Image 2024-03-28 at 6.10.31 PM.jpeg",
-      "/All-Site-Pics/Takasago/WhatsApp Image 2024-03-28 at 6.10.32 PM (1).jpeg",
-      "/All-Site-Pics/Takasago/WhatsApp Image 2024-03-28 at 6.10.33 PM (1).jpeg"
-    ]
+    "folder": "Takasago"
   },
   {
     "id": "tira",
@@ -478,11 +294,7 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2023-02-01",
     "type": "Retail",
-    "images": [
-      "/All-Site-Pics/Tira/Tira-Beautys-New-Office-In-Mumbai-Is-An-Ode-To-Skin-Redefining-The-Workspace-Design-Pataki-Feature-Image.jpg",
-      "/All-Site-Pics/Tira/Tira_Storeimage_Facade.jpg",
-      "/All-Site-Pics/Tira/Tira_storeimage_inside.jpg"
-    ]
+    "folder": "Tira"
   },
   {
     "id": "wipro-mumbai",
@@ -493,38 +305,7 @@
     "completionDate": "2025-11-01",
     "type": "Corporate",
     "featured": true,
-    "images": [
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1029.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1036.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1039.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1041.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1044.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1048.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1049.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1052.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1053.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1063.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1078.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1080.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1093.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1094.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1135.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1137.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1144.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1147.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1168.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1175.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1176.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1177.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1178.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1183.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1194.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1208.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1212.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1216.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1231.jpg",
-      "/All-Site-Pics/Wipro-Mumbai/DSC_1233.jpg"
-    ]
+    "folder": "Wipro-Mumbai"
   },
   {
     "id": "wipro-pune",
@@ -534,28 +315,7 @@
     "location": "Pune - Maharashtra",
     "completionDate": "2025-09-01",
     "type": "Corporate",
-    "images": [
-      "/All-Site-Pics/Wipro-Pune/_DSC2575.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2579.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2594.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2600.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2611.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2617.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2621.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2623.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2624.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2642.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2651.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2669.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2672.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2690.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2711.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2714.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2739.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2745.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2754.jpg",
-      "/All-Site-Pics/Wipro-Pune/_DSC2758.jpg"
-    ]
+    "folder": "Wipro-Pune"
   },
   {
     "id": "zynova",
@@ -565,16 +325,6 @@
     "location": "Mumbai - Maharashtra",
     "completionDate": "2021-02-01",
     "type": "Healthcare",
-    "images": [
-      "/All-Site-Pics/Zynova/29.jpg",
-      "/All-Site-Pics/Zynova/4.jpg",
-      "/All-Site-Pics/Zynova/6.jpg",
-      "/All-Site-Pics/Zynova/DSC_0049-HDR-2-Pano-Edit.jpg",
-      "/All-Site-Pics/Zynova/DSC_0077-HDR-Pano-Edit.jpg",
-      "/All-Site-Pics/Zynova/DSC_0086-HDR-Pano-Edit.jpg",
-      "/All-Site-Pics/Zynova/DSC_0135-HDR-Pano-Edit.jpg",
-      "/All-Site-Pics/Zynova/DSC_0490.JPG",
-      "/All-Site-Pics/Zynova/IMG_E6710.JPG"
-    ]
+    "folder": "Zynova"
   }
 ]

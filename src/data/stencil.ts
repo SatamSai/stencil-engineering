@@ -62,9 +62,9 @@ export const STATS = [
 export const TEAM = [
   { 
     name: 'Hitesh Panchasara', 
-    role: 'Managing Director', 
+    role: 'Founder & Managing Director', 
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80&auto=format&fit=crop',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+    bio: 'B.E. (Civil), with over 35 years of extensive experience in the industry. He functions as the Managing Director of the company and has been a key person, responsible for the fast paced growth of the company.'
   },
   { 
     name: 'Hemanshu Vadgama', 

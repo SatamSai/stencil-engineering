@@ -10,28 +10,56 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="px-5 md:px-8 py-16 border-b border-line" id="about">
-        <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(01) &mdash; About Us</div>
-        <p className="text-[clamp(28px,3vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch]">
-          We are leading interior designers and turnkey contractors, specializing in fitouts and corporate interiors since {STENCIL.estd}.
-        </p>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <p className="text-[15px] leading-relaxed text-ink-2">
-            Over three decades, we have achieved eminence in creating sophisticated ambiences for a distinctive multifaceted client-community, ranging from Service, Healthcare, Insurance, Finance, Retail, Hospitality, Commercial to Business process outsourcing sectors.
+      {/* About Us */}
+      <section className="px-5 md:px-8 py-[120px] border-b border-line">
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-[clamp(36px,4vw,64px)] tracking-[-0.02em] mb-10">About Us</h2>
+          <p className="text-[15px] leading-relaxed text-ink-2 mb-6">
+            Stencil Engineering Pvt Ltd. is a Civil Interior and Exterior Turnkey design and execution firm with expertise in 2005 with expertise in corporate, hospitality, Retail, Pharma /Healthcare and MNC&apos;s projects. Here at Stencil Engineering Pvt ltd, we nature ideas, give them a beautiful form, fill them with myriad colours, and implement them to create a better space around us that instigates a better mood: be it to live work or to play!
+          </p>
+          <p className="text-[15px] leading-relaxed text-ink-2 mb-6">
+            Our Group&apos;s mission is simple, to Design and Execute end-to end solutions that meets client expectations and to pioneer extraordinary design ideas to a lavish reality.
           </p>
           <p className="text-[15px] leading-relaxed text-ink-2">
-            Our team is led by veteran interior design professionals having decades of versatile field experience in the interior design, contracting and allied operations. Together we pilot a well-balanced team of talents, specialising in diverse areas like project management, safety and quality assurance, financial planning to site supervision.
+            We are committed to archiving the highest level of design with a turnkey approach though their services offered. Our designers and execution team successfully participate in projects from the initial concepts, furniture and decorative item selections, construction, document production, budgeting projects coordination always with precision, professionalism, Attention to detail, exceptional customer service and expert project management skills. We deeply focus on the quality, safety, cost effectiveness and the time line we promise to our customers. Over two decades, Stencil Engineering Pvt Ltd is consistently recognized for its business acumen and the innovative design solutions that impeccably blends the functional and the aesthetic requirements.
           </p>
         </div>
       </section>
 
+      {/* Why Stencil Engineering */}
       <section className="px-5 md:px-8 py-[120px] border-b border-line">
         <div className="max-w-[1400px] mx-auto">
-          <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4 mb-4">(02) &mdash; Leadership</div>
-          <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-12 mb-16 items-end border-b border-line pb-12">
-            <h2 className="italic text-[clamp(28px,3.2vw,48px)] leading-[1.22] tracking-[-0.01em] text-ink">
-              &ldquo;We don&apos;t sell square feet. We sell the certainty that on opening day, the lights will come on, the air will be cold, the floor will be flush, and the brand will feel itself in the room.&rdquo;
-            </h2>
+          <h2 className="text-[clamp(36px,4vw,64px)] tracking-[-0.02em] mb-10">Why Stencil Engineering?</h2>
+          <p className="text-[15px] leading-relaxed text-ink-2">
+            We are a design- stalwart organization, offering turnkey services backed by industry Experts. Implementing latest technology. We believe in innovation, along with implementation of out-of-the-box ideas to create an experience for our clients. We design a space keeping in mind the client requirements and basic do&apos;s and don&apos;ts of the space. Bringing versatile designs that not just captivates the eye but also plans for a specious and intelligently built space
+          </p>
+        </div>
+      </section>
+
+      {/* Our Philosophy */}
+      <section className="px-5 md:px-8 py-[120px] border-b border-line">
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-[clamp(36px,4vw,64px)] tracking-[-0.02em] mb-10">Our Philosophy</h2>
+          <p className="text-[15px] leading-relaxed text-ink-2 mb-6">
+            Design. Deploy. Develop – With our in-house team of professionals from different verticals, we offer the best that flourishes any given space.
+          </p>
+          <p className="text-[15px] leading-relaxed text-ink-2 mb-6">
+            Already have a suitable designs for your space? – We liaison with architects and consultants and deploy value addition,
+          </p>
+          <p className="text-[15px] leading-relaxed text-ink-2">
+            We are a design &amp; deploy firm – with our large pool of skilled workmen , we contribute in developing The space by coordinating with vendors and ensure that the site developed within the expected deadlines.
+          </p>
+        </div>
+      </section>
+
+      {/* Leadership */}
+      <section className="px-5 md:px-8 py-[120px] border-b border-line">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="mb-16">
+            <h2 className="text-[clamp(36px,4vw,64px)] tracking-[-0.02em] mb-6">Leadership</h2>
+            <p className="text-[15px] leading-relaxed text-ink-2 max-w-[72ch]">
+              Our executive team members aren&apos;t just managing the directions and vision of our Company, but they are also some of the most influential and renowned people in the interior industry. Their diverse backgrounds and expertise contribute directly to our unique vision and our success.
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {TEAM.map((member) => (
@@ -69,50 +97,6 @@ export default function AboutPage() {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-5 md:px-8 py-[50px]" style={{background:"#edededb8"}}>
-        <div className="max-w-[1400px] mx-auto">
-          <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4 mb-4">(03) &mdash; Accreditation</div>
-          <h2 className="text-[clamp(32px,4vw,64px)] text-accent tracking-[-0.015em] mb-16 max-w-[15ch]">Built on trust and compliance.</h2>
-          
-          <CertificationsGallery />
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="px-5 md:px-8 py-[120px] border-b border-line">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="flex justify-between items-baseline mb-16 pb-5 border-b border-line">
-            <div>
-              <div className=" text-[11px] tracking-[0.1em] uppercase text-ink-3 pb-4">(08) &mdash; In their words</div>
-              <h2 className="text-[clamp(36px,4vw,64px)] tracking-[-0.02em] text-accent">Said about us.</h2>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-line border border-line">
-            {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="px-9 py-10 flex flex-col gap-7 min-h-[360px]" style={{background:"#fff"}}>
-                <span className="text-[64px] leading-[0.5] text-accent">&ldquo;</span>
-                <p className="text-[22px] leading-[1.32] tracking-[-0.005em]">{t.quote}</p>
-                <div className="mt-auto flex flex-col gap-1">
-                  <span className="text-sm font-medium">{t.name}</span>
-                  <span className=" text-[11px] tracking-[0.06em] uppercase text-ink-3">{t.role}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="flex justify-end mt-12 pr-4 md:pr-0">
-            <div className="flex items-center gap-4">
-              <span className="text-[32px] font-serif text-green-600 flex items-baseline leading-none">
-                4.8<span className="text-[20px] ml-1">&#9733;</span>
-              </span>
-              <div className="flex flex-col text-left justify-center border-l border-line pl-4">
-                <span className="text-[13px] font-medium tracking-[0.02em] leading-tight text-ink">Google Reviews</span>
-                <span className="text-[10px] tracking-[0.06em] uppercase text-ink-3 mt-[2px]">Based on 60+ clients</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
