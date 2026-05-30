@@ -32,10 +32,24 @@ export const SERVICES = [
   'Lighting',
 ];
 
-export const CLIENTS = [
-  'Coca-Cola', 'Merrill Lynch', 'Capgemini', 'Accenture', 'Syntel', 'Pfizer',
-  'Wipro', 'Biocon', 'Wockhardt Hospitals', 'Apollo Hospital', 'Reliance Group',
-  'Tata Motors', 'Mercedes-Benz', 'Mahindra',
+export const CLIENT_LOGOS_ROW1 = [
+  { src: "/client-logos/Abbott.png", scale: 85 },
+  { src: "/client-logos/Fortis Hospitals Logo Vector.png", scale: 50 },
+  { src: "/client-logos/ICICIPrudentialLifeInsurancejp.jpeg", scale: 90 },
+  { src: "/client-logos/Johnson-Johnson-Logo.jpg", scale: 45 },
+  { src: "/client-logos/Marriott_International-Logo.wine.png", scale: 65 },
+  { src: "/client-logos/accenture.png", scale: 55 },
+  { src: "/client-logos/dhl.png", scale: 65 },
+];
+
+export const CLIENT_LOGOS_ROW2 = [
+  { src: "/client-logos/Nokia-Logo.wine.png", scale: 60 },
+  { src: "/client-logos/Tata-logo.png", scale: 35 },
+  { src: "/client-logos/Tech-mahindra-logo.png", scale: 65 },
+  { src: "/client-logos/Wipro_Secondary Logo_Color_RGB.png", scale: 60 },
+  { src: "/client-logos/mercedes-benz-seeklogo.png", scale: 55 },
+  { src: "/client-logos/godrej.png", scale: 45 },
+  { src: "/client-logos/ss-logo.png", scale: 50 },
 ];
 
 export const PROCESS = [

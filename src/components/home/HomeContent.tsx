@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { STENCIL, SERVICES, SECTORS, STATS, CLIENTS, PROCESS, TESTIMONIALS, TEAM, CERTIFICATIONS } from "@/data/stencil";
+import { STENCIL, SERVICES, SECTORS, STATS, CLIENT_LOGOS_ROW1, CLIENT_LOGOS_ROW2, PROCESS, TESTIMONIALS, TEAM, CERTIFICATIONS } from "@/data/stencil";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { ImageViewerModal } from "@/components/projects/ImageViewerModal";
 import { motion, useInView, animate, useScroll, useTransform } from "framer-motion";
@@ -48,26 +48,8 @@ export default function HomeContent({ projects }: HomeContentProps) {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [filter, setFilter] = useState("All");
 
-  const row1 = [
-    "/client-logos/Abbott.png",
-    "/client-logos/Fortis Hospitals Logo Vector.png",
-    "/client-logos/ICICIPrudentialLifeInsurancejp.jpeg",
-    "/client-logos/Johnson-Johnson-Logo.jpg",
-    "/client-logos/Marriott_International-Logo.wine.png",
-    "/client-logos/accenture.png",
-    "/client-logos/dhl.png",
-  ];
-  const row2 = [
-    "/client-logos/Nokia-Logo.wine.png",
-    "/client-logos/Tata-logo.png",
-    "/client-logos/Tech-mahindra-logo.png",
-    "/client-logos/Wipro_Secondary Logo_Color_RGB.png",
-    "/client-logos/mercedes-benz-seeklogo.png",
-    "/client-logos/godrej.png",
-    "/client-logos/ss-logo.png",
-  ];
-  const marquee1 = [...row1, ...row1];
-  const marquee2 = [...row2, ...row2];
+  const marquee1 = [...CLIENT_LOGOS_ROW1, ...CLIENT_LOGOS_ROW1];
+  const marquee2 = [...CLIENT_LOGOS_ROW2, ...CLIENT_LOGOS_ROW2];
 
   const types = ["All", ...Array.from(new Set(projects.map((p) => p.type)))];
   const filteredProjects = filter === "All" ? projects : projects.filter((p) => p.type === filter);
@@ -75,7 +57,7 @@ export default function HomeContent({ projects }: HomeContentProps) {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[92vh] min-h-[680px] overflow-hidden bg-ink">
+      <section className="relative min-h-[680px] overflow-hidden bg-ink p-16">
         <motion.div style={{ y: yImage }} className="absolute -inset-[15%] z-0">
           <Image
             src="/DSC_1684-scaled.jpg"
@@ -87,11 +69,11 @@ export default function HomeContent({ projects }: HomeContentProps) {
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30 z-10 pointer-events-none" />
-        <motion.div style={{ y: yText }} className="relative z-20 h-full px-5 md:px-10 py-10 flex flex-col justify-center text-white">
+        <motion.div style={{ y: yText }} className="relative z-20 h-full py-10 flex flex-col justify-center text-white max-w-[1400px] mx-auto">
           <div className="absolute top-10 right-5 md:right-10 flex justify-end font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">
             <span>Est. {STENCIL.estd}</span>
           </div>
-          <div className="flex flex-col gap-4 max-w-3xl mb-[15vh]">
+          <div className="flex flex-col gap-4 max-w-3xl mb-[15vh] mt-10">
             <h1 className="font-sans font-normal text-[clamp(48px,8vw,120px)] leading-[1.05] tracking-[-0.03em]">
               Delivering on<br />our promises
             </h1>
@@ -118,17 +100,19 @@ export default function HomeContent({ projects }: HomeContentProps) {
 
       {/* Intro */}
       <section className="px-5 md:px-10 py-16" id="about">
-        <div className=" text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">About Us</div>
-        <p className="text-[clamp(28px,3.1vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch] text-accent">
-          We are leading interior designers and turnkey contractors, specializing in fitouts and corporate interiors.
-        </p>
-        <div className="mt-9 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <p className="text-[17px] leading-relaxed">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">About Us</div>
+          <p className="text-[clamp(28px,3.1vw,48px)] leading-[1.18] tracking-[-0.015em] max-w-[24ch] text-accent">
+            We are leading interior designers and turnkey contractors, specializing in fitouts and corporate interiors.
+          </p>
+          <div className="mt-9 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <p className="text-[17px] leading-relaxed">
             Over 35 years, we have achieved eminence in creating sophisticated ambiences for a distinctive multifaceted client-community, ranging from Service, Healthcare, Insurance, Finance, Retail, Hospitality, Commercial to Business process outsourcing sectors.
-          </p>
-          <p className="text-[17px] leading-relaxed">
-            Our team is led by veteran interior design professionals having decades of versatile field experience in the interior design, contracting and allied operations. Together we pilot a well-balanced team of talents, specialising in diverse areas like project management, safety and quality assurance, financial planning to site supervision.
-          </p>
+            </p>
+            <p className="text-[17px] leading-relaxed">
+              Our team is led by veteran interior design professionals having decades of versatile field experience in the interior design, contracting and allied operations. Together we pilot a well-balanced team of talents, specialising in diverse areas like project management, safety and quality assurance, financial planning to site supervision.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -178,7 +162,7 @@ export default function HomeContent({ projects }: HomeContentProps) {
               <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Selected Work</div>
               <h2 className="font-serif text-[clamp(28px,3.1vw,48px)] leading-none tracking-[-0.02em] text-accent">Featured Projects</h2>
             </div>
-            <a href="/projects" className="hidden sm:inline-flex items-center gap-2 text-[13px] tracking-[0.02em] font-medium bg-ink text-bg px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out group pointer">
+            <a href="/projects" className="hidden sm:inline-flex items-center gap-2 text-[13px] tracking-[0.02em] font-medium bg-bg-2 text-bg px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out group pointer">
               View All <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
             </a>
           </div>
@@ -195,32 +179,46 @@ export default function HomeContent({ projects }: HomeContentProps) {
       </section>
 
       {/* Clients */}
-      <section className="overflow-hidden" id="clients">
-        <div className="flex justify-between items-baseline px-5 md:px-10 py-16 pb-8 max-w-[1400px] mx-auto">
-          <div>
-            <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Clientele</div>
-            <h2 className="font-serif text-accent text-[clamp(28px,3.1vw,48px)] tracking-[-0.015em]">In good company</h2>
+      <section className="overflow-hidden px-5 md:px-10 py-16 pb-8" id="clients">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="flex justify-between items-baseline">
+            <div>
+              <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Clientele</div>
+              <h2 className="font-serif text-accent text-[clamp(28px,3.1vw,48px)] tracking-[-0.015em]">In good company</h2>
+            </div>
           </div>
-        </div>
-        <div className="relative overflow-hidden py-12 bg-white/40 flex flex-col gap-6">
-          <div className="marquee-container">
-            {marquee1.map((logo, i) => (
-              <div key={i} className="flex items-center justify-center px-10 h-20 w-[240px] shrink-0 transition-all duration-500">
-                <div className="relative w-full h-[65%]">
-                  <Image src={logo} alt="Client logo" fill className="object-contain" sizes="240px" />
+          <div className="relative overflow-hidden py-12 bg-white/40 flex flex-col gap-6">
+            <div className="marquee-container">
+              {marquee1.map((logo, i) => (
+                <div key={i} className="flex items-center justify-center px-10 h-28 w-[240px] shrink-0 transition-all duration-500">
+                  <div 
+                    className="w-full h-full transition-all duration-500"
+                    style={{
+                      backgroundImage: `url("${logo.src}")`,
+                      backgroundSize: `${logo.scale}%`,
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          <div className="marquee-container-reverse">
-            {marquee2.map((logo, i) => (
-              <div key={i} className="flex items-center justify-center px-10 h-20 w-[240px] shrink-0 transition-all duration-500">
-                <div className="relative w-full h-[65%]">
-                  <Image src={logo} alt="Client logo" fill className="object-contain" sizes="240px" />
+            <div className="marquee-container-reverse">
+              {marquee2.map((logo, i) => (
+                <div key={i} className="flex items-center justify-center px-10 h-28 w-[240px] shrink-0 transition-all duration-500">
+                  <div 
+                    className="w-full h-full transition-all duration-500"
+                    style={{
+                      backgroundImage: `url("${logo.src}")`,
+                      backgroundSize: `${logo.scale}%`,
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

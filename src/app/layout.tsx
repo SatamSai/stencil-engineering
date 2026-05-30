@@ -116,7 +116,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${spaceMono.variable} ${outfit.variable} ${cormorant.variable} ${inter.variable} ${fraunces.variable} ${jakarta.variable} ${caslon.variable} ${manrope.variable} ${neueHaas.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${spaceMono.variable} ${outfit.variable} ${cormorant.variable} ${inter.variable} ${fraunces.variable} ${jakarta.variable} ${caslon.variable} ${manrope.variable} ${neueHaas.variable}`}>
       <body className="font-sans antialiased">
         <ThemeProvider>
           <Header />

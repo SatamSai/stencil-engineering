@@ -43,14 +43,17 @@ export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-[100] flex flex-col bg-ink/95 backdrop-blur-sm">
+    <div 
+      className="fixed inset-0 z-[100] flex flex-col bg-ink/95 backdrop-blur-sm"
+      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+    >
       {/* Close Button */}
       <div className="absolute top-6 right-6 z-20">
         <button 
           onClick={onClose}
           className="p-2.5 rounded-full bg-bg/10 hover:bg-bg/20 text-bg transition-colors cursor-pointer"
         >
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
           </svg>
         </button>
@@ -65,14 +68,14 @@ export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className="relative w-full h-full flex items-center justify-center p-2 md:p-4"
+            className="flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
           >
             <Image
               src={project.images[selectedIdx]}
               alt={`${project.title} — ${selectedIdx + 1}`}
               fill
               priority
-              sizes="100vw"
               className="object-contain rounded-md shadow-2xl"
             />
           </motion.div>

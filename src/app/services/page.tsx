@@ -50,56 +50,42 @@ const fadeUp = {
 export default function ServicesPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative h-[42vh] min-h-[290px] overflow-hidden bg-ink">
+      {/* Hero Section */}
+      <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-8">
         <Image
           src="/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg"
           alt="Stencil Engineering services"
           fill
           priority
           sizes="100vw"
-          className="object-cover brightness-[0.45]"
+          className="object-cover brightness-[0.5]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60 z-10" />
-        <div className="relative z-20 h-full px-5 md:px-10 flex flex-col justify-end pb-16 md:pb-20 text-white">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            className="flex flex-col gap-5 max-w-3xl"
-          >
-            <motion.h1
-              custom={1}
-              variants={fadeUp}
-              className="font-serif font-normal text-[clamp(44px,7vw,108px)] leading-[1.02] tracking-[-0.03em]"
-            >
-              Every discipline.<br />One contract.
-            </motion.h1>
-            <motion.p
-              custom={2}
-              variants={fadeUp}
-              className="text-[clamp(15px,1.5vw,20px)] text-white/75 leading-relaxed max-w-[50ch]"
-            >
-              From the first sketch to final commissioning, Stencil manages every trade
-              in-house — so nothing falls through the gaps.
-            </motion.p>
-          </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30 z-10" />
+        <div className="relative z-20 h-full py-16 pt-20 flex flex-col justify-end text-white max-w-[1400px] mx-auto">
+          <div className="text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2 opacity-70">Services</div>
+          <h1 className="font-serif font-normal text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch]">
+            Every discipline.<br />One contract.
+          </h1>
+          <p className="mt-6 text-[20px] leading-relaxed text-white/80 max-w-[52ch]">
+            From the first sketch to final commissioning, Stencil manages every trade in-house &mdash; so nothing falls through the gaps.
+          </p>
         </div>
       </section>
 
-      {/* Three primary services */}
-      <section className="px-5 md:px-10 py-20">
+      {/* Intro Section */}
+      <section className="px-8 py-24">
         <div className="max-w-[1400px] mx-auto">
           <div className="mb-12">
-            <span className="font-serif text-[11px] tracking-[0.14em] text-ink-3">What do we offer</span>
-            <h2 className="font-serif text-[clamp(28px,3.2vw,50px)] leading-[1.08] tracking-[-0.02em] text-accent mt-2 max-w-[22ch]">
-              Comprehensive Service Offerings
+            <div className="text-[clamp(11px,1vw,14px)] tracking-[0.12em] uppercase text-accent/70 pb-3">What we do</div>
+            <h2 className="font-serif text-[clamp(28px,3.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-accent max-w-[22ch]">
+              Comprehensive interior turnkey solutions.
             </h2>
-            <p className="font-sans text-[15px] text-ink-2 mt-4 max-w-[48ch] leading-relaxed">
-              We provide customized interior solutions tailored every project need.
+            <p className="text-[17px] text-ink-2 mt-6 max-w-[52ch] leading-relaxed">
+              We provide customized interior solutions tailored to every project need, from fit-outs to full design & build management.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {MAIN_SERVICES.map((svc, i) => (
               <motion.div
                 key={svc.id}
@@ -108,8 +94,7 @@ export default function ServicesPage() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-60px" }}
                 variants={fadeUp}
-                className="group relative overflow-hidden rounded-sm bg-ink flex flex-col"
-                style={{ minHeight: "520px" }}
+                className="group relative overflow-hidden bg-ink-2 flex flex-col min-h-[560px]"
               >
                 <div className="absolute inset-0">
                   <Image
@@ -117,17 +102,17 @@ export default function ServicesPage() {
                     alt={svc.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover brightness-[0.5] group-hover:brightness-[0.4] group-hover:scale-105 transition-all duration-700 ease-out"
+                    className="object-cover brightness-[0.55] group-hover:brightness-[0.4] group-hover:scale-[1.03] transition-all duration-1000 ease-out"
                   />
                 </div>
-                <div className="relative z-10 flex flex-col justify-end h-full p-8 text-white">
-                  <span className="font-serif text-[10px] tracking-[0.12em] text-white/50 mb-3">
+                <div className="relative z-10 flex flex-col justify-end h-full p-10 text-white">
+                  <div className="font-serif text-[11px] tracking-[0.12em] text-white/50 uppercase mb-4">
                     {svc.subtitle}
-                  </span>
-                  <h3 className="font-serif text-[clamp(26px,2.5vw,36px)] leading-[1.1] tracking-[-0.015em] mb-4">
+                  </div>
+                  <h3 className="font-serif text-[clamp(28px,2.5vw,40px)] leading-[1.1] tracking-[-0.015em] mb-5">
                     {svc.title}
                   </h3>
-                  <p className="text-[15px] text-white/70 leading-relaxed max-w-[38ch] mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-400">
+                  <p className="text-[15px] text-white/70 leading-relaxed max-w-[38ch] opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden h-0 group-hover:h-auto">
                     {svc.desc}
                   </p>
                 </div>
@@ -138,33 +123,31 @@ export default function ServicesPage() {
       </section>
 
       {/* Our Process */}
-      <section className="px-5 md:px-10 bg-paper">
+      <section className="px-8 py-20" style={{ background: '#edededb8' }}>
         <div className="max-w-[1400px] mx-auto">
-          <div className="text-center mb-16">
-            <span className="font-sans text-[12px] tracking-[0.12em] uppercase text-ink-3 border-b border-ink-3 pb-1">
-              Our Process
-            </span>
-            <h2 className="font-sans font-bold text-[clamp(32px,4vw,60px)] leading-[1.06] tracking-[-0.02em] text-ink mt-6 max-w-[22ch] mx-auto">
-              Our Streamlined Service And Support Process
+          <div className="mb-10">
+            <div className="text-[clamp(11px,1vw,14px)] tracking-[0.12em] uppercase text-accent/70 pb-3">Our Process</div>
+            <h2 className="font-serif text-[clamp(28px,3.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-accent max-w-[22ch]">
+              Streamlined Service and Support.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-ink/10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-line pt-12">
             {[
               {
                 num: "01",
-                title: "Initial Consultation and Assessment",
+                title: "Initial Consultation",
                 body: "We collaborate with clients to understand their specific requirements and project goals, ensuring alignment on expectations and project scope for a smooth and efficient workflow.",
               },
               {
                 num: "02",
-                title: "Technical and Execution Planning",
-                body: "Using the provided concepts, we develop detailed technical and execution drawings, ensuring every aspect of the project, including materials and timelines, is clearly defined and aligned with client expectations.",
+                title: "Execution Planning",
+                body: "Using the provided concepts, we develop detailed technical and execution drawings, ensuring materials and timelines are clearly defined and aligned with client expectations.",
               },
               {
                 num: "03",
-                title: "Project Delivery and Aftercare",
-                body: "Upon project completion, we offer a 1-year defects liability period to address any post-handover issues. Our team is available for ongoing support and maintenance to ensure long-term satisfaction.",
+                title: "Delivery and Aftercare",
+                body: "Upon project completion, we offer a 1-year defects liability period to address any post-handover issues. Our team is available for ongoing support and maintenance.",
               },
             ].map((step, i) => (
               <motion.div
@@ -174,13 +157,13 @@ export default function ServicesPage() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-40px" }}
                 variants={fadeUp}
-                className="px-0 md:px-10 py-10 first:pl-0 last:pr-0"
+                className="flex flex-col"
               >
-                <span className="font-sans text-[13px] text-ink-3">{step.num}</span>
-                <h3 className="font-sans font-bold text-[clamp(17px,1.5vw,22px)] leading-[1.25] text-ink mt-5">
+                <span className="font-serif text-[18px] text-accent mb-6">{step.num}</span>
+                <h3 className="font-serif text-[24px] leading-tight text-ink mb-4">
                   {step.title}
                 </h3>
-                <p className="mt-4 font-sans text-[15px] text-ink-2 leading-relaxed">
+                <p className="text-[16px] text-ink-2 leading-relaxed">
                   {step.body}
                 </p>
               </motion.div>
@@ -190,16 +173,16 @@ export default function ServicesPage() {
       </section>
 
       {/* Sectors */}
-      <section className="px-5 md:px-10 py-20">
+      <section className="px-8 py-20 pb-32">
         <div className="max-w-[1400px] mx-auto">
-          <div className="mb-12">
-            <span className="font-mono text-[11px] tracking-[0.14em] uppercase text-ink-3">Industries</span>
-            <h2 className="font-serif text-[clamp(28px,3.2vw,50px)] leading-[1.08] tracking-[-0.02em] text-accent mt-2">
-              Sectors we serve
+          <div className="mb-16 text-center">
+            <div className="text-[clamp(11px,1vw,14px)] tracking-[0.12em] uppercase text-accent/70 pb-3">Industries</div>
+            <h2 className="font-serif text-[clamp(28px,3.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-accent">
+              Expertise across sectors.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {SECTORS.map((sector, i) => (
               <motion.div
                 key={sector.n}
@@ -208,7 +191,7 @@ export default function ServicesPage() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-60px" }}
                 variants={fadeUp}
-                className="group relative overflow-hidden rounded-sm"
+                className="group relative overflow-hidden"
                 style={{ aspectRatio: "4/3" }}
               >
                 <Image
@@ -216,18 +199,18 @@ export default function ServicesPage() {
                   alt={sector.name}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover brightness-[0.6] group-hover:brightness-[0.45] group-hover:scale-105 transition-all duration-700 ease-out"
+                  className="object-cover brightness-[0.55] group-hover:brightness-[0.4] group-hover:scale-[1.03] transition-all duration-700 ease-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-                <div className="absolute inset-0 p-7 flex flex-col justify-between text-white">
-                  <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-white/50">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+                <div className="absolute inset-0 p-8 flex flex-col justify-between text-white">
+                  <span className="font-serif text-[12px] tracking-[0.1em] text-white/50 uppercase">
                     {sector.n}
                   </span>
                   <div>
-                    <h3 className="font-serif text-[clamp(22px,2vw,30px)] leading-[1.1] tracking-[-0.01em] mb-2">
+                    <h3 className="font-serif text-[clamp(24px,2vw,32px)] leading-[1.1] tracking-[-0.01em] mb-3">
                       {sector.name}
                     </h3>
-                    <p className="text-[13px] text-white/70 leading-relaxed max-w-[32ch] opacity-0 group-hover:opacity-100 transition-opacity duration-400">
+                    <p className="text-[13px] text-white/70 leading-relaxed max-w-[32ch] opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden h-0 group-hover:h-auto">
                       {sector.desc}
                     </p>
                   </div>

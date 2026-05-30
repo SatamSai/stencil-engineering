@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function CareersPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -15,19 +16,27 @@ export default function CareersPage() {
 
   return (
     <>
-      <div className="border-b border-line">
-        <div className="p-8 pt-16">
-          <div className="max-w-[1400px] mx-auto">
-            <div className="text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Careers</div>
-            <h1 className="text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch] text-bg-2">
-              Join the<br />team.
-            </h1>
-            <p className="mt-6 text-[20px] leading-relaxed text-bg/75 max-w-[52ch]">
-              We are always looking for people who enjoy a challenge and have a thirst for knowledge.
-            </p>
-          </div>
+      {/* Hero Section */}
+      <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-8">
+        <Image
+          src="/All-Site-Pics/Karix/DSC_1428-scaled.jpg"
+          alt="Stencil Engineering careers"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover brightness-[0.5]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30 z-10" />
+        <div className="relative z-20 h-full py-16 pt-20 flex flex-col justify-end text-white max-w-[1400px] mx-auto">
+          <div className="text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2 opacity-70">Careers</div>
+          <h1 className="text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch] font-serif">
+            Join the<br />team.
+          </h1>
+          <p className="mt-6 text-[20px] leading-relaxed text-white/80 max-w-[52ch]">
+            We are always looking for people who enjoy a challenge and have a thirst for knowledge.
+          </p>
         </div>
-      </div>
+      </section>
 
       <section className="px-5 md:px-8 py-24 overflow-hidden" style={{backgroundColor:"#edededb8"}}>
         <div className="max-w-[1400px] mx-auto">

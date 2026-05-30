@@ -27,7 +27,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 text-white">
           {/* Sitemap */}
           <div>
-            <div className="text-[14px] tracking-[0.1em] mb-5 font-medium">Sitemap</div>
+            <div className="text-[14px] tracking-[0.1em] mb-5 font-medium uppercase">Sitemap</div>
             <div className="flex flex-col gap-2.5 text-sm">
               {SITEMAP.map(x => (
                 <Link key={x.label} href={x.href} className="hover:underline">{x.label}</Link>
@@ -36,11 +36,24 @@ export function Footer() {
           </div>
           {/* Project Types */}
           <div>
-            <div className="text-[14px] tracking-[0.1em] mb-5 font-medium">Project Types</div>
+            <div className="text-[14px] tracking-[0.1em] mb-5 font-medium uppercase">Project Types</div>
             <div className="flex flex-col gap-2.5 text-sm">
               {PROJECT_CATEGORIES.map(cat => (
                 <Link key={cat.label} href={cat.href} className="hover:underline">{cat.label}</Link>
               ))}
+            </div>
+          </div>
+          {/* Contact */}
+          <div className="lg:col-start-4">
+            <div className="text-[14px] tracking-[0.1em] mb-5 font-medium uppercase">Contact</div>
+            <div className="flex flex-col gap-4 text-sm opacity-80">
+              <p className="leading-relaxed max-w-[28ch]">
+                {STENCIL.address}
+              </p>
+              <div className="flex flex-col gap-2">
+                <a href={`tel:${STENCIL.phone.replace(/\s/g, '')}`} className="hover:underline">{STENCIL.phone}</a>
+                <a href={`mailto:${STENCIL.email}`} className="hover:underline">{STENCIL.email}</a>
+              </div>
             </div>
           </div>
         </div>
