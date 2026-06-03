@@ -18,24 +18,24 @@ const MAIN_SERVICES = [
     title: "Design & Build",
     subtitle: "Start to finish, under one roof",
     desc: "We provide complete design and interior fit-out services in full turnkey solutions helping to reduce project risks and costs, and can lead to faster completion.",
-    image: "/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg",
+    image: "/All-Site-Pics/Wipro-Pune/_DSC2690.JPG",
   },
   {
     id: "management",
     title: "Project Management",
     subtitle: "Rigorous control at every stage",
     desc: "Tight scheduling, daily HSE reporting, transparent cost control. Our project managers protect your interests and keep delivery on track — every day.",
-    image: "/All-Site-Pics/Nokia/DSC_0245.JPG",
+    image: "/bg7.jpg",
   },
 ];
 
 const SECTOR_IMAGES: Record<string, string> = {
-  "MNC Offices": "/All-Site-Pics/Karix/DSC_1428-scaled.jpg",
+  "MNC Offices": "/bg4.jpg",
   "Healthcare": "/All-Site-Pics/Zynova/29.jpg",
-  "Hospitality": "/All-Site-Pics/Club_Mahindra_Ashtamudi/00bb1e4752458ab4bda8169ced702601.jpg",
+  "Hospitality": "/bg3.jpg",
   "Pharma & R&D": "/All-Site-Pics/Takasago/WhatsApp Image 2024-03-28 at 6.10.33 PM (1).jpeg",
   "Retail": "/All-Site-Pics/Tira/Tira_Storeimage_Facade.jpg",
-  "BFSI & Insurance": "/All-Site-Pics/KMRL/1-31-1600x900.jpg",
+  "BFSI & Insurance": "/bg8.jpg",
 };
 
 const fadeUp = {

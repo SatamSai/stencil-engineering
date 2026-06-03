@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-8">
         <Image
-          src="/All-Site-Pics/Karix/DSC_1428-scaled.jpg" 
+          src="/All-Site-Pics/Wipro-Pune/_DSC2642.JPG" 
           alt="About Stencil Engineering" 
           fill 
           priority
@@ -46,7 +46,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/3] bg-bg-2 overflow-hidden shadow-sm">
               <Image
-                src="/All-Site-Pics/Karix/DSC_1527-scaled.jpg" 
+                src="/bg2.jpeg" 
                 alt="Stencil Engineering interior 1" 
                 fill 
                 className="object-cover"
@@ -63,7 +63,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] bg-bg-2 overflow-hidden shadow-sm lg:order-1">
               <Image 
-                src="/All-Site-Pics/Karix/DSC_1650-scaled.jpg" 
+                src="/bg1.jpeg" 
                 alt="Stencil Engineering interior 2" 
                 fill 
                 className="object-cover"

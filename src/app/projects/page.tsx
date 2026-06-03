@@ -11,7 +11,7 @@ export default function ProjectsPage() {
     <>
       <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-8">
         <Image
-          src="/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg"
+          src="/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.14.03 PM.png"
           alt="Stencil Engineering portfolio"
           fill
           priority
@@ -20,6 +20,7 @@ export default function ProjectsPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30 z-10" />
         <div className="relative z-20 h-full py-16 pt-20 flex flex-col justify-end text-white max-w-[1400px] mx-auto">
+          <div className="text-[11px] tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2 opacity-70">Projects</div>
           <h1 className="text-[clamp(48px,6vw,100px)] leading-[0.96] tracking-[-0.025em] max-w-[12ch] font-serif">
             Selected<br />work.
           </h1>

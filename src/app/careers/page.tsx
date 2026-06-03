@@ -19,7 +19,7 @@ export default function CareersPage() {
       {/* Hero Section */}
       <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-8">
         <Image
-          src="/All-Site-Pics/Karix/DSC_1428-scaled.jpg"
+          src="/bg9.jpg"
           alt="Stencil Engineering careers"
           fill
           priority

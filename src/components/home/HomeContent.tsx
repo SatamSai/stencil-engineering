@@ -88,7 +88,7 @@ export default function HomeContent({ projects }: HomeContentProps) {
                 View Projects
               </Link>
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 border border-white/60 text-white text-[16px] tracking-[0.04em] px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-[1.03] hover:bg-white/10 hover:border-white"
               >
                 Contact Us
@@ -167,11 +167,14 @@ export default function HomeContent({ projects }: HomeContentProps) {
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projects.slice(0, 4).map((project) => (
+            {['wipro-mumbai', 'atlas-phase-1-2023', 'club-mahindra-ashtamudi', 'hcg-manavata-cancer-centre-nashik']
+              .map((id) => projects.find((p) => p.id === id))
+              .filter(Boolean)
+              .map((project) => (
               <ProjectCard
-                key={project.id}
-                project={project}
-                onClick={() => setSelectedProject(project)}
+                key={project!.id}
+                project={project!}
+                onClick={() => setSelectedProject(project!)}
               />
             ))}
           </div>

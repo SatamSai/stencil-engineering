@@ -19,16 +19,16 @@ export const SECTORS = [
 
 export const SERVICES = [
   'Turnkey Execution',
-  'Fit-out Design',
+  'Interior Fit-Out',
   'Project Management',
   'Space Planning',
-  'Planning Approvals',
-  'Interior Design',
+  'Civil Works',
+  'Joinery',
   'Modular Furniture',
   'HVAC',
   'Fire Fighting & Security',
   'Electrical',
-  'Data & Networking',
+  'IT & Audio/Visual',
   'Lighting',
 ];
 
@@ -69,7 +69,7 @@ export const TESTIMONIALS = [
 export const STATS = [
   { val: 35,    suffix: '+', l: 'Years of service' },
   { val: 200,  suffix: '+', l: 'Projects delivered' },
-  { val: 14,    suffix: '',  l: 'States across India' },
+  { val: 21,    suffix: '',  l: 'States across India' },
   { val: 7,   suffix: 'M+', l: 'Sq ft executed', decimals: 1 },
 ];
 
