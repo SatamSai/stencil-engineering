@@ -63,7 +63,7 @@ export default function CareersPage() {
             <div className="bg-bg p-8 md:p-12 border border-line shadow-sm relative overflow-hidden">
               <AnimatePresence mode="wait">
                 {!submitted ? (
-                  <motion.form 
+                  <motion.form
                     key="form"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -89,15 +89,15 @@ export default function CareersPage() {
                     <div className="flex flex-col gap-4 pt-4">
                       <label className=" text-[11px] tracking-[0.08em] uppercase text-ink-3">Resume Upload</label>
                       <div className="relative">
-                        <input 
-                          type="file" 
-                          id="c-file" 
-                          className="hidden" 
+                        <input
+                          type="file"
+                          id="c-file"
+                          className="hidden"
                           accept=".pdf,.doc,.docx"
                           onChange={handleFileChange}
                         />
-                        <label 
-                          htmlFor="c-file" 
+                        <label
+                          htmlFor="c-file"
                           className="inline-flex items-center gap-3 px-6 py-3 border border-dashed border-ink-3/50 rounded-lg cursor-pointer hover:border-ink transition-colors group w-full"
                         >
                           <span className="text-2xl opacity-40 group-hover:opacity-100 transition-opacity">&darr;</span>
@@ -112,8 +112,8 @@ export default function CareersPage() {
                       <button type="submit" className="bg-bg-2 text-bg px-10 py-4 rounded-full text-[13px] font-medium tracking-[0.02em] transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_4px_14px_0_rgba(0,0,0,0.1)]">
                         Submit Application &rarr;
                       </button>
-                      <button 
-                        type="reset" 
+                      <button
+                        type="reset"
                         onClick={() => { setFileName(null); }}
                         className=" text-[11px] tracking-[0.08em] uppercase text-ink-3 hover:text-ink transition-colors"
                       >
@@ -122,7 +122,7 @@ export default function CareersPage() {
                     </div>
                   </motion.form>
                 ) : (
-                  <motion.div 
+                  <motion.div
                     key="success"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -135,7 +135,7 @@ export default function CareersPage() {
                     <p className="text-ink-2 max-w-[30ch]">
                       Our recruitment team will review your profile and get back to you if there is a match.
                     </p>
-                    <button 
+                    <button
                       onClick={() => setSubmitted(false)}
                       className="mt-8 font-mono text-[11px] tracking-[0.08em] uppercase text-ink border-b border-ink pb-1"
                     >

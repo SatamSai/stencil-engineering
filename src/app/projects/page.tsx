@@ -9,7 +9,7 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-8">
+      <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-10">
         <Image
           src="/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.14.03 PM.png"
           alt="Stencil Engineering portfolio"

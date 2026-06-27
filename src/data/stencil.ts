@@ -2,10 +2,9 @@ export const STENCIL = {
   name: 'Stencil Engineering',
   fullName: 'Stencil Engineering Pvt Ltd',
   tagline: 'Interior Designers & Turnkey Contractors',
-  phone: '+91 22 4890 1200',
-  email: 'projects@stencilengg.in',
-  address: '14th Floor, Marathon Futurex, Lower Parel, Mumbai 400013',
-  estd: '1989',
+  phone: '(+91 22) 2839 1948/1949',
+  email: 'enquiry@stencilengg.com',
+  address: '206, Eco Space, Off. Old Nagardas Road, Mogra Village, Andheri - East, Mumbai - 400 069.',
 };
 
 export const SECTORS = [
@@ -18,38 +17,35 @@ export const SECTORS = [
 ];
 
 export const SERVICES = [
-  'Turnkey Execution',
-  'Interior Fit-Out',
-  'Project Management',
-  'Space Planning',
-  'Civil Works',
-  'Joinery',
+  'Concept Design & Space Planning',
+  'Corporate & Commercial Interiors',
+  'Turnkey Fit-Out Execution',
+  'MEP Coordination',
+  'Project Management & Cost Control',
+  'Quality & Safety Compliance',
   'Modular Furniture',
-  'HVAC',
-  'Fire Fighting & Security',
-  'Electrical',
-  'IT & Audio/Visual',
-  'Lighting',
+  'IT, AV & Security',
+  'Post-Completion Support',
 ];
 
 export const CLIENT_LOGOS_ROW1 = [
-  { src: "/client-logos/Abbott.png", scale: 85 },
-  { src: "/client-logos/Fortis Hospitals Logo Vector.png", scale: 50 },
-  { src: "/client-logos/ICICIPrudentialLifeInsurancejp.jpeg", scale: 90 },
-  { src: "/client-logos/Johnson-Johnson-Logo.jpg", scale: 45 },
-  { src: "/client-logos/Marriott_International-Logo.wine.png", scale: 65 },
-  { src: "/client-logos/accenture.png", scale: 55 },
-  { src: "/client-logos/dhl.png", scale: 65 },
+  { src: "/client-logos/Abbott.png", scale: 95 },
+  { src: "/client-logos/Fortis Hospitals Logo Vector.png", scale: 75 },
+  { src: "/client-logos/ICICIPrudentialLifeInsurancejp.jpeg", scale: 95 },
+  { src: "/client-logos/Johnson-Johnson-Logo.jpg", scale: 70 },
+  { src: "/client-logos/Marriott_International-Logo.wine.png", scale: 85 },
+  { src: "/client-logos/accenture.png", scale: 80 },
+  { src: "/client-logos/dhl.png", scale: 85 },
 ];
 
 export const CLIENT_LOGOS_ROW2 = [
-  { src: "/client-logos/Nokia-Logo.wine.png", scale: 60 },
-  { src: "/client-logos/Tata-logo.png", scale: 35 },
-  { src: "/client-logos/Tech-mahindra-logo.png", scale: 65 },
-  { src: "/client-logos/Wipro_Secondary Logo_Color_RGB.png", scale: 60 },
-  { src: "/client-logos/mercedes-benz-seeklogo.png", scale: 55 },
-  { src: "/client-logos/godrej.png", scale: 45 },
-  { src: "/client-logos/ss-logo.png", scale: 50 },
+  { src: "/client-logos/Nokia-Logo.wine.png", scale: 80 },
+  { src: "/client-logos/Tata-logo.png", scale: 60 },
+  { src: "/client-logos/Tech-mahindra-logo.png", scale: 85 },
+  { src: "/client-logos/Wipro_Secondary Logo_Color_RGB.png", scale: 80 },
+  { src: "/client-logos/mercedes-benz-seeklogo.png", scale: 75 },
+  { src: "/client-logos/godrej.png", scale: 70 },
+  { src: "/client-logos/ss-logo.png", scale: 75 },
 ];
 
 export const PROCESS = [
@@ -68,34 +64,31 @@ export const TESTIMONIALS = [
 
 export const STATS = [
   { val: 35,    suffix: '+', l: 'Years of service' },
-  { val: 200,  suffix: '+', l: 'Projects delivered' },
-  { val: 21,    suffix: '',  l: 'States across India' },
-  { val: 7,   suffix: 'M+', l: 'Sq ft executed', decimals: 1 },
+  { val: 450,  suffix: '+', l: 'Projects delivered' },
+  { val: 9,   suffix: 'M+', l: 'Sq ft executed', decimals: 1 },
+  { val: 18,    suffix: '',  l: 'States across India' },
 ];
 
 export const TEAM = [
   { 
     name: 'Hitesh Panchasara', 
     role: 'Founder & Managing Director', 
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80&auto=format&fit=crop',
-    bio: 'B.E. (Civil), with over 35 years of extensive experience in the industry. He functions as the Managing Director of the company and has been a key person, responsible for the fast paced growth of the company.'
+    bio: 'Hitesh is a qualified Civil Engineer, functioning as the Managing Director of the company. With over 35 years of visionary leadership, Hitesh drives the strategic direction and ensures unparalleled quality in every project we deliver.'
   },
   { 
     name: 'Hemanshu Vadgama', 
     role: 'Director · Admin & Finance', 
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80&auto=format&fit=crop',
-    bio: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.'
+    bio: 'Hemanshu is a qualified Science graduate and is also a Diploma holder in Interior Designing & Decoration. Hemanshu oversees financial strategy and administrative excellence, ensuring seamless operations and sustainable business growth.'
   },
   { 
     name: 'Girish Bhadesia',  
-    role: 'Director · Civil, Interior & MEP', 
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80&auto=format&fit=crop',
-    bio: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.'
+    role: 'Director · Project Execution', 
+    bio: 'Girish is a qualified Commerce graduate and is also a Diploma holder in Interior Designing & Management. An expert in civil and MEP systems, Girish brings technical precision and robust engineering solutions to our most complex interior fit outs.'
   },
 ];
 
 export const CERTIFICATIONS = [
-  { id: '1', name: 'ISO 9001:2015', label: 'Quality Management System', image: '/certificates/cert-1.png' },
+  { id: '1', name: 'ISO 9001:2015', label: 'Quality Management', image: '/certificates/cert-1.png' },
   { id: '2', name: 'MSME',            label: 'Registered Enterprise',     image: '/certificates/cert-2.png' },
   { id: '3', name: 'ISO 45001:2018', label: 'Health & Safety Standard',  image: '/certificates/cert-3.png' },
   { id: '4', name: 'IGBC',            label: 'Green Building Council',    image: '/certificates/cert-4.png' },

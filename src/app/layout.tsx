@@ -101,11 +101,11 @@ const neueHaas = localFont({
 
 export const metadata: Metadata = {
   title: "Stencil Engineering — Interior Design & Turnkey Contractors",
-  description: "Leading Interior Designers & Turnkey Contractors since 1989. Corporate fitouts, healthcare, hospitality, pharma and retail spaces across India.",
+  description: "Leading Interior Designers & Turnkey Contractors since 1991. Corporate fitouts, healthcare, hospitality, pharma and retail spaces across India.",
   keywords: ["interior design", "turnkey contractors", "corporate fitouts", "Mumbai", "Stencil Engineering"],
   openGraph: {
     title: "Stencil Engineering — Interior Design & Turnkey Contractors",
-    description: "Leading Interior Designers & Turnkey Contractors since 1989.",
+    description: "Leading Interior Designers & Turnkey Contractors since 1991.",
     type: "website",
   },
 };

@@ -91,16 +91,16 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           </div>
         )}
 
-        <div className="absolute left-4 bottom-3.5 text-white/90 font-mono text-[10px] tracking-[0.08em] uppercase drop-shadow-lg pointer-events-none">
+        <div className="absolute left-4 bottom-3.5 text-white/90 font-serif text-[13px] tracking-[0.08em] uppercase drop-shadow-lg pointer-events-none">
           {project.location || "MUMBAI, IN"}
         </div>
       </div>
 
       <div className="flex justify-between items-baseline">
-        <span className="font-serif text-[18px] tracking-[-0.01em] leading-[1.1]">{project.title}</span>
-        <span className=" text-[10px] tracking-[0.06em] uppercase text-ink-3 flex items-center gap-0.5"><ArrowUpRight className="w-3 h-3"/> View</span>
+        <span className="font-serif text-[21px] tracking-[-0.01em] leading-[1.1]">{project.title}</span>
+        <span className=" text-[13px] tracking-[0.06em] uppercase text-ink-3 flex items-center gap-0.5"><ArrowUpRight className="w-3 h-3"/> View</span>
       </div>
-      <div className=" text-[10px] tracking-[0.06em] uppercase text-ink-3 flex gap-4">
+      <div className=" text-[13px] tracking-[0.06em] uppercase text-ink-3 flex gap-4">
         <span>{project.type}</span>
         <span>{project.size || "45,000"} SQ FT</span>
       </div>

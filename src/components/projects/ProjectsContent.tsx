@@ -24,13 +24,13 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
   const types = ["All", ...Array.from(new Set(projects.map((p) => p.type).filter((t) => t && t.trim() !== "")))];
 
   const filter = urlType && types.includes(urlType) ? urlType : "All";
-  const sortedProjects = [...projects].sort((a, b) => new Date(b.completionDate).getTime() - new Date(a.completionDate).getTime());
-  const filteredProjects = filter === "All" ? sortedProjects : sortedProjects.filter((p) => p.type === urlType);
+  const filteredProjects = filter === "All" ? projects : projects.filter((p) => p.type === urlType);
 
   const displayedProjects = filteredProjects.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProjects.length;
 
   const observerTarget = React.useRef(null);
+  const contentRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     setVisibleCount(10);
@@ -63,11 +63,12 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
 
   const handleFilterClick = (t: string) => {
     router.push(`/projects${t === "All" ? "" : `?type=${encodeURIComponent(t)}`}`, { scroll: false });
+    contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
     <>
-      <section className="px-5 md:px-8 py-24 pb-[120px]" style={{ background: "#edededb8" }}>
+      <section ref={contentRef} className="px-5 md:px-8 py-24 pb-[120px]" style={{ background: "#edededb8" }}>
         <div className="max-w-[1400px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-16">
             <div className="w-full lg:w-[200px] shrink-0 lg:sticky lg:top-[100px] self-start z-10">

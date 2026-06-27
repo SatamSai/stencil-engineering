@@ -10,7 +10,6 @@ export type Project = {
   natureOfWork: string;
   size: string;
   location: string;
-  completionDate: string;
   type: string;
   featured?: boolean;
   folder: string;

@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "@/components/ThemeProvider";
 
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -19,7 +17,6 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { theme, setTheme, themes } = useTheme();
 
   useEffect(() => {
     const handle = () => setScrolled(window.scrollY > 40);
@@ -43,7 +40,7 @@ export function Header() {
       {/* Spacer to prevent CLS when the fixed nav is active */}
       <div className="h-[88px] w-full" />
 
-      <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between gap-6 bg-bg shadow-[0_1px_12px_0_rgba(0,0,0,0.07)] transition-all duration-300 ease-in-out ${scrolled ? "py-2.5 px-4 md:px-7" : "py-[18px] px-4 md:px-7"}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between gap-6 bg-bg shadow-[0_2px_24px_0_rgba(0,0,0,0.14)] transition-all duration-300 ease-in-out ${scrolled ? "py-2.5 px-4 md:px-7" : "py-[18px] px-4 md:px-7"}`}>
         <Link href="/" className="flex items-center gap-3 shrink-0 relative">
           <div className={`relative transition-all duration-300 ease-in-out ${scrolled ? "h-[34px] w-[140px]" : "h-[52px] w-[214px]"}`}>
             <Image
@@ -127,7 +124,7 @@ export function Header() {
             Start a project &rarr;
           </Link>
           <div className="mt-8 font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3">
-            +91 22 4890 1200
+            (+91 22) 2839 1948/1949
           </div>
         </div>
       </div>

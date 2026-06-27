@@ -1,107 +1,13 @@
 [
   {
-    "id": "abbott",
-    "title": "Abbott Healthcare",
-    "natureOfWork": "Civil Interior work",
+    "id": "wipro-mumbai",
+    "title": "Wipro Ltd",
+    "natureOfWork": "Design + Build",
     "size": "1,00,000",
     "location": "Mumbai - Maharashtra",
-    "completionDate": "2018-05-01",
     "type": "Corporate",
-    "featured": false,
-    "folder": "Abbott"
-  },
-  {
-    "id": "atlas-phase-1-2023",
-    "title": "Atlas Skill Tech - Phase 1",
-    "natureOfWork": "Civil Interior work",
-    "size": "1,08,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2023-02-01",
-    "type": "Education",
-    "featured": false,
-    "folder": "Atlas-Phase-1-2023"
-  },
-  {
-    "id": "atlas-phase-2-2024",
-    "title": "Atlas Skill Tech Phase 2",
-    "natureOfWork": "Civil Interior work",
-    "size": "40,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2025-11-01",
-    "type": "Education",
-    "folder": "Atlas-Phase-2-2024"
-  },
-  {
-    "id": "axtria-hyderabad",
-    "title": "Axtria",
-    "natureOfWork": "Civil Interior work",
-    "size": "60,000",
-    "location": "Hyderabad - Telangana",
-    "completionDate": "2024-03-01",
-    "type": "Corporate",
-    "featured": false,
-    "folder": "Axtria-Hyderabad"
-  },
-  {
-    "id": "axtria-pune",
-    "title": "Axtria",
-    "natureOfWork": "Civil Interior, Furniture",
-    "size": "60,000",
-    "location": "Pune - Maharashtra",
-    "completionDate": "2024-03-01",
-    "type": "Corporate",
-    "featured": false,
-    "folder": "Axtria-Pune"
-  },
-  {
-    "id": "bombay-international-school",
-    "title": "Bombay International School",
-    "natureOfWork": "Turnkey Project",
-    "size": "15,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2020-11-01",
-    "type": "Education",
-    "folder": "Bombay_International_School"
-  },
-  {
-    "id": "booking.com",
-    "title": "Booking.com",
-    "natureOfWork": "Civil Interior work",
-    "size": "10,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2018-03-01",
-    "type": "Corporate",
-    "folder": "Booking.com"
-  },
-  {
-    "id": "club-mahindra-ashtamudi",
-    "title": "Club Mahindra",
-    "natureOfWork": "Civil Interior, Furniture",
-    "size": "1,00,000",
-    "location": "Astamudi - Kerala",
-    "completionDate": "2019-06-01",
-    "type": "Hospitality",
-    "folder": "Club_Mahindra_Ashtamudi"
-  },
-  {
-    "id": "club-mahindra-goa",
-    "title": "Club Mahindra",
-    "natureOfWork": "Civil Interior work",
-    "size": "1,50,000",
-    "location": "Goa",
-    "completionDate": "2019-09-01",
-    "type": "Hospitality",
-    "folder": "Club_Mahindra_Goa"
-  },
-  {
-    "id": "concast-2022",
-    "title": "Concast",
-    "natureOfWork": "Turnkey Project",
-    "size": "20,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2021-03-01",
-    "type": "Corporate",
-    "folder": "Concast-2022"
+    "featured": true,
+    "folder": "Wipro-Mumbai"
   },
   {
     "id": "dsp-mutual-fund-bangalore",
@@ -109,131 +15,9 @@
     "natureOfWork": "Turnkey Project",
     "size": "5,363",
     "location": "Bangalore - Karnataka",
-    "completionDate": "2026-02-01",
     "type": "Corporate",
     "featured": true,
     "folder": "DSP Mutual Fund Bangalore"
-  },
-  {
-    "id": "epicor",
-    "title": "Epicor",
-    "natureOfWork": "Civil Interior work",
-    "size": "15,000",
-    "location": "Bangalore - Karnataka",
-    "completionDate": "2023-01-01",
-    "type": "Corporate",
-    "folder": "Epicor"
-  },
-  {
-    "id": "equinox",
-    "title": "Equinox Business Center",
-    "natureOfWork": "Civil Interior work",
-    "size": "16,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2021-03-01",
-    "type": "Corporate",
-    "folder": "Equinox"
-  },
-  {
-    "id": "hcg-manavata-cancer-centre-nashik",
-    "title": "HCG Manavata Cancer Centre",
-    "natureOfWork": "Civil Interior, Fire fighting and Plumbing Work",
-    "size": "1,75,000",
-    "location": "Nashik - Maharashtra",
-    "completionDate": "2018-04-01",
-    "type": "Healthcare",
-    "folder": "HCG_Manavata_Cancer_Centre_Nashik"
-  },
-  {
-    "id": "johnson-&-johnson",
-    "title": "Johnson & Johnson",
-    "natureOfWork": "Interior Fitout Project",
-    "size": "11,200",
-    "location": "Hyderabad - Telangana",
-    "completionDate": "2018-04-01",
-    "type": "Corporate",
-    "folder": "Johnson & Johnson"
-  },
-  {
-    "id": "kmrl",
-    "title": "Kochi Metro Rail Limited (KMRL)",
-    "natureOfWork": "Turnkey project",
-    "size": "23,000",
-    "location": "Kochi - Kerala",
-    "completionDate": "2020-03-01",
-    "type": "Corporate",
-    "folder": "KMRL"
-  },
-  {
-    "id": "ksitil",
-    "title": "KSITIL",
-    "natureOfWork": "Turnkey Project",
-    "size": "30,000",
-    "location": "Kochi - Kerala",
-    "completionDate": "2022-01-01",
-    "type": "Corporate",
-    "folder": "KSITIL"
-  },
-  {
-    "id": "karix",
-    "title": "Karix",
-    "natureOfWork": "Civil Interior work",
-    "size": "15,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2023-06-01",
-    "type": "Corporate",
-    "featured": true,
-    "folder": "Karix"
-  },
-  {
-    "id": "marriot-goa",
-    "title": "Marriott Fairfield",
-    "natureOfWork": "Civil Interior work",
-    "size": "15,000",
-    "location": "Goa - Panji",
-    "completionDate": "2019-06-01",
-    "type": "Hospitality",
-    "folder": "Marriot_Goa"
-  },
-  {
-    "id": "marriot-jodhpur",
-    "title": "Marriott Fairfield",
-    "natureOfWork": "Civil Interior work",
-    "size": "45,000",
-    "location": "Jodhpur - Rajasthan",
-    "completionDate": "2019-09-01",
-    "type": "Hospitality",
-    "folder": "Marriot_Jodhpur"
-  },
-  {
-    "id": "mercedes-benz",
-    "title": "Mercedes-Benz",
-    "natureOfWork": "Civil Interior work",
-    "size": "",
-    "location": "Mumbai, Rajkot, Raipur, Nagpur, Kolkata, Bhopal, Surat",
-    "completionDate": "2019-03-01",
-    "type": "Retail",
-    "folder": "Mercedes_Benz"
-  },
-  {
-    "id": "narayana-hrudayalaya-limited",
-    "title": "Narayana Hrudayalaya Limited",
-    "natureOfWork": "Turnkey Project",
-    "size": "22,600",
-    "location": "Bangalore - Karnataka",
-    "completionDate": "2016-10-01",
-    "type": "Healthcare",
-    "folder": "Narayana Hrudayalaya Limited"
-  },
-  {
-    "id": "nokia",
-    "title": "Nokia",
-    "natureOfWork": "Civil Interior work",
-    "size": "25,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2018-10-01",
-    "type": "Corporate",
-    "folder": "Nokia"
   },
   {
     "id": "olive-upgrad-education",
@@ -241,9 +25,220 @@
     "natureOfWork": "Civil Interior work",
     "size": "1,05,000",
     "location": "Mumbai - Maharashtra",
-    "completionDate": "2023-10-01",
     "type": "Education",
     "folder": "Olive_UpGrad_Education"
+  },
+  {
+    "id": "booking.com",
+    "title": "Booking.com",
+    "natureOfWork": "Civil Interior work",
+    "size": "10,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "folder": "Booking.com"
+  },
+  {
+    "id": "club-mahindra-goa",
+    "title": "Club Mahindra",
+    "natureOfWork": "Civil Interior work",
+    "size": "1,50,000",
+    "location": "Goa",
+    "type": "Hospitality",
+    "folder": "Club_Mahindra_Goa"
+  },
+  {
+    "id": "tira",
+    "title": "Tira Beauty",
+    "natureOfWork": "Interior fitout project",
+    "size": "6,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Retail",
+    "folder": "Tira"
+  },
+  {
+    "id": "hcg-manavata-cancer-centre-nashik",
+    "title": "HCG Manavata Cancer Centre",
+    "natureOfWork": "Civil Interior, Fire fighting and Plumbing Work",
+    "size": "1,75,000",
+    "location": "Nashik - Maharashtra",
+    "type": "Healthcare",
+    "folder": "HCG_Manavata_Cancer_Centre_Nashik"
+  },
+  {
+    "id": "atlas-phase-2-2024",
+    "title": "Atlas Skill Tech Phase 2",
+    "natureOfWork": "Civil Interior work",
+    "size": "40,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Education",
+    "folder": "Atlas-Phase-2-2024"
+  },
+  {
+    "id": "vicco",
+    "title": "Vicco Laboratories",
+    "natureOfWork": "Interior Fitout Project",
+    "size": "10,000",
+    "location": "Nagpur - Maharashtra",
+    "type": "Corporate",
+    "folder": "Vicco"
+  },
+  {
+    "id": "marriot-jodhpur",
+    "title": "Marriott Fairfield",
+    "natureOfWork": "Civil Interior work",
+    "size": "45,000",
+    "location": "Jodhpur - Rajasthan",
+    "type": "Hospitality",
+    "folder": "Marriot_Jodhpur"
+  },
+  {
+    "id": "epicor",
+    "title": "Epicor",
+    "natureOfWork": "Civil Interior work",
+    "size": "15,000",
+    "location": "Bangalore - Karnataka",
+    "type": "Corporate",
+    "folder": "Epicor"
+  },
+  {
+    "id": "wipro-pune",
+    "title": "Wipro Ltd",
+    "natureOfWork": "Design + Build",
+    "size": "29,000",
+    "location": "Pune - Maharashtra",
+    "type": "Corporate",
+    "folder": "Wipro-Pune"
+  },
+  {
+    "id": "atlas-phase-1-2023",
+    "title": "Atlas Skill Tech - Phase 1",
+    "natureOfWork": "Civil Interior work",
+    "size": "1,08,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Education",
+    "featured": false,
+    "folder": "Atlas-Phase-1-2023"
+  },
+  {
+    "id": "concast-2022",
+    "title": "Concast",
+    "natureOfWork": "Turnkey Project",
+    "size": "20,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "folder": "Concast-2022"
+  },
+  {
+    "id": "fortis",
+    "title": "Fortis Hospital",
+    "natureOfWork": "Civil Interior work",
+    "size": "2,00,000",
+    "location": "Noida - Uttar Pradesh",
+    "type": "Healthcare",
+    "folder": "Fortis"
+  },
+  {
+    "id": "karix",
+    "title": "Karix",
+    "natureOfWork": "Civil Interior work",
+    "size": "15,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "featured": true,
+    "folder": "Karix"
+  },
+  {
+    "id": "axtria-hyderabad",
+    "title": "Axtria",
+    "natureOfWork": "Civil Interior work",
+    "size": "60,000",
+    "location": "Hyderabad - Telangana",
+    "type": "Corporate",
+    "featured": false,
+    "folder": "Axtria-Hyderabad"
+  },
+  {
+    "id": "club-mahindra-ashtamudi",
+    "title": "Club Mahindra",
+    "natureOfWork": "Civil Interior, Furniture",
+    "size": "1,00,000",
+    "location": "Astamudi - Kerala",
+    "type": "Hospitality",
+    "folder": "Club_Mahindra_Ashtamudi"
+  },
+  {
+    "id": "mercedes-benz",
+    "title": "Mercedes-Benz",
+    "natureOfWork": "Civil Interior work",
+    "size": "",
+    "location": "Mumbai, Rajkot, Raipur, Nagpur, Kolkata, Bhopal, Surat",
+    "type": "Retail",
+    "folder": "Mercedes_Benz"
+  },
+  {
+    "id": "bombay-international-school",
+    "title": "Bombay International School",
+    "natureOfWork": "Turnkey Project",
+    "size": "15,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Education",
+    "folder": "Bombay_International_School"
+  },
+  {
+    "id": "marriot-goa",
+    "title": "Marriott Fairfield",
+    "natureOfWork": "Civil Interior work",
+    "size": "15,000",
+    "location": "Goa - Panji",
+    "type": "Hospitality",
+    "folder": "Marriot_Goa"
+  },
+  {
+    "id": "abbott",
+    "title": "Abbott Healthcare",
+    "natureOfWork": "Civil Interior work",
+    "size": "1,00,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "featured": false,
+    "folder": "Abbott"
+  },
+  {
+    "id": "axtria-pune",
+    "title": "Axtria",
+    "natureOfWork": "Civil Interior, Furniture",
+    "size": "60,000",
+    "location": "Pune - Maharashtra",
+    "type": "Corporate",
+    "featured": false,
+    "folder": "Axtria-Pune"
+  },
+  {
+    "id": "equinox",
+    "title": "Equinox Business Center",
+    "natureOfWork": "Civil Interior work",
+    "size": "16,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "folder": "Equinox"
+  },
+  {
+    "id": "johnson-&-johnson",
+    "title": "Johnson & Johnson",
+    "natureOfWork": "Interior Fitout Project",
+    "size": "11,200",
+    "location": "Hyderabad - Telangana",
+    "type": "Corporate",
+    "folder": "Johnson & Johnson"
+  },
+  {
+    "id": "narayana-hrudayalaya-limited",
+    "title": "Narayana Hrudayalaya Limited",
+    "natureOfWork": "Turnkey Project",
+    "size": "22,600",
+    "location": "Bangalore - Karnataka",
+    "type": "Healthcare",
+    "folder": "Narayana Hrudayalaya Limited"
   },
   {
     "id": "shoppers-stop",
@@ -251,7 +246,6 @@
     "natureOfWork": "Civil Interior work",
     "size": "",
     "location": "Bangalore, Gurgaon, Kochi, Trivandrum",
-    "completionDate": "2021-12-01",
     "type": "Retail",
     "folder": "Shoppers_Stop"
   },
@@ -261,10 +255,18 @@
     "natureOfWork": "Civil Interior work",
     "size": "2,00,000",
     "location": "Mumbai - Maharashtra",
-    "completionDate": "2025-11-01",
     "type": "Healthcare",
     "featured": true,
     "folder": "St_Jude"
+  },
+  {
+    "id": "cytiva",
+    "title": "Cytiva",
+    "natureOfWork": "Design + Build",
+    "size": "30,000",
+    "location": "Pune - Maharashtra",
+    "type": "Corporate",
+    "folder": "Cytiva"
   },
   {
     "id": "tn-shukla",
@@ -272,50 +274,8 @@
     "natureOfWork": "Design + Build",
     "size": "75,000",
     "location": "Jabalpur - Madhya Pradesh",
-    "completionDate": "2025-12-01",
     "type": "Healthcare",
     "folder": "TN-Shukla"
-  },
-  {
-    "id": "takasago",
-    "title": "Takasago",
-    "natureOfWork": "Interior fitout project",
-    "size": "15,000",
-    "location": "Bangalore - Karnataka",
-    "completionDate": "2025-07-01",
-    "type": "Corporate",
-    "folder": "Takasago"
-  },
-  {
-    "id": "tira",
-    "title": "Tira Beauty",
-    "natureOfWork": "Interior fitout project",
-    "size": "6,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2023-02-01",
-    "type": "Retail",
-    "folder": "Tira"
-  },
-  {
-    "id": "wipro-mumbai",
-    "title": "Wipro Ltd",
-    "natureOfWork": "Design + Build",
-    "size": "1,00,000",
-    "location": "Mumbai - Maharashtra",
-    "completionDate": "2025-11-01",
-    "type": "Corporate",
-    "featured": true,
-    "folder": "Wipro-Mumbai"
-  },
-  {
-    "id": "wipro-pune",
-    "title": "Wipro",
-    "natureOfWork": "Design + Build",
-    "size": "29,000",
-    "location": "Pune - Maharashtra",
-    "completionDate": "2025-09-01",
-    "type": "Corporate",
-    "folder": "Wipro-Pune"
   },
   {
     "id": "zynova",
@@ -323,8 +283,61 @@
     "natureOfWork": "Civil Interior, Furniture",
     "size": "1,20,000",
     "location": "Mumbai - Maharashtra",
-    "completionDate": "2021-02-01",
     "type": "Healthcare",
     "folder": "Zynova"
+  },
+  {
+    "id": "nokia",
+    "title": "Nokia",
+    "natureOfWork": "Civil Interior work",
+    "size": "25,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "folder": "Nokia"
+  },
+  {
+    "id": "capgemini",
+    "title": "Capgemini",
+    "natureOfWork": "Civil Interior work",
+    "size": "1,25,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "folder": "Capgemini"
+  },
+  {
+    "id": "tata-capital",
+    "title": "Tata Capital",
+    "natureOfWork": "Civil Interior work",
+    "size": "95,000",
+    "location": "Mumbai - Maharashtra",
+    "type": "Corporate",
+    "folder": "Tata_Capital"
+  },
+  {
+    "id": "takasago",
+    "title": "Takasago",
+    "natureOfWork": "Interior fitout project",
+    "size": "15,000",
+    "location": "Bangalore - Karnataka",
+    "type": "Corporate",
+    "folder": "Takasago"
+  },
+  {
+    "id": "kmrl",
+    "title": "Kochi Metro Rail Limited (KMRL)",
+    "natureOfWork": "Turnkey project",
+    "size": "23,000",
+    "location": "Kochi - Kerala",
+    "type": "Corporate",
+    "folder": "KMRL"
+  },
+  {
+    "id": "ksitil",
+    "title": "KSITIL",
+    "natureOfWork": "Turnkey Project",
+    "size": "30,000",
+    "location": "Kochi - Kerala",
+    "type": "Corporate",
+    "folder": "KSITIL"
   }
 ]
