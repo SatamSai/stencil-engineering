@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { SECTORS, PROCESS } from "@/data/stencil";
+import { SECTORS } from "@/data/stencil";
 
 const MAIN_SERVICES = [
   {
@@ -26,8 +26,8 @@ const SECTOR_IMAGES: Record<string, string> = {
   "MNC Offices": "/bg4.jpg",
   "Healthcare": "/All-Site-Pics/Zynova/29.jpg",
   "Hospitality": "/bg3.jpg",
-  "Pharma & R&D": "/All-Site-Pics/Takasago/WhatsApp Image 2024-03-28 at 6.10.33 PM (1).jpeg",
-  "Retail": "/All-Site-Pics/Tira/Tira_Storeimage_Facade.jpg",
+  "Pharma & R&D": "/All-Site-Pics/Takasago/4.jpeg",
+  "Retail": "/All-Site-Pics/Tira/1.jpg",
   "BFSI & Insurance": "/bg8.jpg",
 };
 
@@ -44,7 +44,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-10">
+      <section className="relative min-h-[350px] overflow-hidden bg-ink px-10">
         <Image
           src="/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg"
           alt="Stencil Engineering services"

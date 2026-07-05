@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { STENCIL, SERVICES, SECTORS, STATS, CLIENT_LOGOS_ROW1, CLIENT_LOGOS_ROW2, PROCESS, TESTIMONIALS, TEAM, CERTIFICATIONS } from "@/data/stencil";
+import { SERVICES, STATS, CLIENT_LOGOS_ROW1, CLIENT_LOGOS_ROW2 } from "@/data/stencil";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { ImageViewerModal } from "@/components/projects/ImageViewerModal";
 import { motion, useInView, animate, useScroll, useTransform, AnimatePresence } from "framer-motion";
@@ -43,10 +43,10 @@ interface HomeContentProps {
 const HERO_IMAGES = [
   { src: "/DSC_1684-scaled.jpg", alt: "Stencil Engineering project interior" },
   { src: "/All-Site-Pics/Wipro-Mumbai/DSC_1177.jpg", alt: "Stencil Engineering project interior 2" },
-  { src: "/All-Site-Pics/DSP Mutual Fund Bangalore/6.jpg", alt: "Stencil Engineering project interior 3" },
-  { src: "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-8-1536x1015.jpg", alt: "Stencil Engineering project interior 3" },
-  { src: "/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg", alt: "Stencil Engineering project interior 3" },
-  { src: "/All-Site-Pics/Wipro-Mumbai/DSC_1039.jpg", alt: "Stencil Engineering project interior 2" },
+  { src: "/All-Site-Pics/DSP Mutual Fund Bangalore/6.jpg", alt: "DSP Mutual Fund, Bangalore office interior" },
+  { src: "/All-Site-Pics/Olive_UpGrad_Education/atlas-skilltech-university-upgrad-living-8-1536x1015.jpg", alt: "Atlas SkillTech University UpGrad living space" },
+  { src: "/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg", alt: "Equinox project interior" },
+  { src: "/All-Site-Pics/Wipro-Mumbai/DSC_1039.jpg", alt: "Wipro Mumbai office interior" },
 ];
 
 const CAROUSEL_INTERVAL = 5000;
@@ -58,7 +58,6 @@ export default function HomeContent({ projects }: HomeContentProps) {
 
   const [activeSlide, setActiveSlide] = useState(0);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [filter, setFilter] = useState("All");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -69,9 +68,6 @@ export default function HomeContent({ projects }: HomeContentProps) {
 
   const marquee1 = [...CLIENT_LOGOS_ROW1, ...CLIENT_LOGOS_ROW1];
   const marquee2 = [...CLIENT_LOGOS_ROW2, ...CLIENT_LOGOS_ROW2];
-
-  const types = ["All", ...Array.from(new Set(projects.map((p) => p.type)))];
-  const filteredProjects = filter === "All" ? projects : projects.filter((p) => p.type === filter);
 
   return (
     <>
@@ -207,9 +203,9 @@ export default function HomeContent({ projects }: HomeContentProps) {
               <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Selected Work</div>
               <h2 className="font-serif text-[clamp(28px,3.1vw,48px)] leading-none tracking-[-0.02em] text-accent">Featured Projects</h2>
             </div>
-            <a href="/projects" className="hidden sm:inline-flex items-center gap-2 text-[13px] tracking-[0.02em] font-medium bg-bg-2 text-bg px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out group pointer">
+            <Link href="/projects" className="hidden sm:inline-flex items-center gap-2 text-[13px] tracking-[0.02em] font-medium bg-bg-2 text-bg px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out group">
               View All <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {['wipro-mumbai', 'atlas-phase-1-2023', 'club-mahindra-ashtamudi', 'hcg-manavata-cancer-centre-nashik']

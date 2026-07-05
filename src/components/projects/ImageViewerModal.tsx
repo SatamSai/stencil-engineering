@@ -17,6 +17,36 @@ interface ImageViewerModalProps {
 export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
   const [selectedIdx, setSelectedIdx] = React.useState(0);
   const scrollRef = React.useRef<HTMLDivElement>(null);
+  const imgRef = React.useRef<HTMLImageElement>(null);
+
+  const handleImageAreaClick = (e: React.MouseEvent) => {
+    const img = imgRef.current;
+    if (!img || !img.naturalWidth || !img.naturalHeight) {
+      return;
+    }
+
+    const rect = img.getBoundingClientRect();
+    const imageRatio = img.naturalWidth / img.naturalHeight;
+    const boxRatio = rect.width / rect.height;
+
+    let renderedWidth = rect.width;
+    let renderedHeight = rect.height;
+    if (imageRatio > boxRatio) {
+      renderedHeight = rect.width / imageRatio;
+    } else {
+      renderedWidth = rect.height * imageRatio;
+    }
+
+    const offsetX = (rect.width - renderedWidth) / 2;
+    const offsetY = (rect.height - renderedHeight) / 2;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const clickedOnVisibleImage =
+      x >= offsetX && x <= offsetX + renderedWidth && y >= offsetY && y <= offsetY + renderedHeight;
+
+    if (!clickedOnVisibleImage) onClose();
+  };
 
   React.useEffect(() => {
     if (scrollRef.current) {
@@ -49,18 +79,22 @@ export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
     >
       {/* Close Button */}
       <div className="absolute top-6 right-6 z-20">
-        <button 
+        <button
           onClick={onClose}
-          className="p-2.5 rounded-full bg-bg/10 hover:bg-bg/20 text-bg transition-colors cursor-pointer"
+          aria-label="Close"
+          className="p-3 rounded-full bg-black/70 hover:bg-black/90 shadow-lg backdrop-blur-md transition-colors cursor-pointer text-white"
         >
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
           </svg>
         </button>
       </div>
 
       {/* Main Image */}
-      <div className="flex-1 relative flex items-center justify-center p-2 md:p-4 overflow-hidden">
+      <div
+        className="flex-1 relative flex items-center justify-center p-2 md:p-4 overflow-hidden"
+        onClick={handleImageAreaClick}
+      >
         <AnimatePresence mode="wait">
           <motion.div
             key={selectedIdx}
@@ -69,9 +103,9 @@ export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 0.3 }}
             className="flex items-center justify-center"
-            onClick={(e) => e.stopPropagation()}
           >
             <Image
+              ref={imgRef}
               src={project.images[selectedIdx]}
               alt={`${project.title} — ${selectedIdx + 1}`}
               fill

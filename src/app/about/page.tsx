@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { STENCIL, TEAM, CERTIFICATIONS, TESTIMONIALS } from "@/data/stencil";
+import { TEAM } from "@/data/stencil";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { CertificationsGallery } from "@/components/ui/CertificationsGallery";
 
 export default function AboutPage() {
 

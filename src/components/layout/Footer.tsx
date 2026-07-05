@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowUpRight, ArrowDown } from "lucide-react";
 import { STENCIL } from "@/data/stencil";
 
 const PROJECT_CATEGORIES = [
@@ -17,8 +16,6 @@ const SITEMAP = [
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ];
-
-const CERTS = ["ISO 9001 : 2015", "ISO 14001 : 2015", "ISO 45001 : 2018", "OHSAS 18001 : 2007"];
 
 export function Footer() {
   return (
@@ -61,7 +58,7 @@ export function Footer() {
         <div className="mt-8 pt-6 border-t border-line flex flex-col sm:flex-row justify-between items-center text-[13px] tracking-[0.06em] gap-4 text-white">
           <span>&copy; 2026 {STENCIL.fullName}</span>
           <div className="flex gap-[18px]">
-            <a href="https://www.linkedin.com/company/stencil-engineering-pvt-ltd/" className="hover:opacity-70 transition-opacity" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/stencil-engineering-pvt-ltd/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity" aria-label="LinkedIn">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 width="20" 
@@ -72,7 +69,7 @@ export function Footer() {
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
             </a>
-            <a href="https://www.instagram.com/stencil_engineering" className="hover:opacity-70 transition-opacity" aria-label="Instagram">
+            <a href="https://www.instagram.com/stencil_engineering" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity" aria-label="Instagram">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 width="20" 

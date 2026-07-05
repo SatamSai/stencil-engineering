@@ -4,6 +4,7 @@ export const STENCIL = {
   tagline: 'Interior Designers & Turnkey Contractors',
   phone: '(+91 22) 2839 1948/1949',
   email: 'enquiry@stencilengg.com',
+  careersEmail: 'careers@stencilengg.com',
   address: '206, Eco Space, Off. Old Nagardas Road, Mogra Village, Andheri - East, Mumbai - 400 069.',
 };
 
@@ -46,20 +47,6 @@ export const CLIENT_LOGOS_ROW2 = [
   { src: "/client-logos/mercedes-benz-seeklogo.png", scale: 75 },
   { src: "/client-logos/godrej.png", scale: 70 },
   { src: "/client-logos/ss-logo.png", scale: 75 },
-];
-
-export const PROCESS = [
-  { n: '01', name: 'Brief & Discovery',     d: 'We understand your operations, brand, headcount and constraints. Site survey and existing-condition study.' },
-  { n: '02', name: 'Concept & Design',      d: 'Space planning, 3D visualisations and material boards. Iteration with stakeholders until sign-off.' },
-  { n: '03', name: 'Engineering & Costing', d: 'MEP, FFS, BMS and LVS engineering. Transparent BoQ, value engineering and procurement strategy.' },
-  { n: '04', name: 'Execution',             d: 'In-house teams and trusted vendors. Daily QA/HSE reporting. Snag-free handover, on schedule.' },
-  { n: '05', name: 'Aftercare',             d: 'Defect liability, AMC, and continued partnership through expansions and refits.' },
-];
-
-export const TESTIMONIALS = [
-  { quote: 'Stencil delivered our innovation hub three weeks ahead of schedule, with a level of finish that holds up two years on. Their MEP coordination was the difference.', name: 'Rohan Mehta',  role: 'Head of Workplace, Capgemini India' },
-  { quote: 'A rare partner who treats a hospital fitout with the seriousness it deserves. Compliance, infection control, and patient experience — all considered.',              name: 'Dr. Anita Rao', role: 'Director of Operations, Wockhardt' },
-  { quote: 'We have rolled out fourteen sites with Stencil across five states. Brand consistency is non-negotiable for us, and they hit it every time.',                        name: 'Karan Shah',   role: 'VP Real Estate, Reliance Retail' },
 ];
 
 export const STATS = [

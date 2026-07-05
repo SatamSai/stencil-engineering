@@ -24,22 +24,48 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
   const types = ["All", ...Array.from(new Set(projects.map((p) => p.type).filter((t) => t && t.trim() !== "")))];
 
   const filter = urlType && types.includes(urlType) ? urlType : "All";
-  const filteredProjects = filter === "All" ? projects : projects.filter((p) => p.type === urlType);
+  const filteredProjects = filter === "All" ? projects : projects.filter((p) => p.type === filter);
 
   const displayedProjects = filteredProjects.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProjects.length;
 
-  const observerTarget = React.useRef(null);
+  const observerTarget = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
+  const loadMoreTimeoutRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const hasMoreRef = React.useRef(hasMore);
+  const isLoadingMoreRef = React.useRef(isLoadingMore);
+
+  const [prevFilter, setPrevFilter] = React.useState(filter);
+  if (filter !== prevFilter) {
+    setPrevFilter(filter);
+    setVisibleCount(10);
+  }
 
   React.useEffect(() => {
-    setVisibleCount(10);
-  }, [filter]);
+    hasMoreRef.current = hasMore;
+    isLoadingMoreRef.current = isLoadingMore;
+  }, [hasMore, isLoadingMore]);
+
+  const loadMore = React.useCallback(() => {
+    setIsLoadingMore(true);
+    loadMoreTimeoutRef.current = setTimeout(() => {
+      setVisibleCount((prev) => prev + 10);
+      setIsLoadingMore(false);
+    }, 800);
+  }, []);
+
+  React.useEffect(() => {
+    return () => {
+      if (loadMoreTimeoutRef.current) {
+        clearTimeout(loadMoreTimeoutRef.current);
+      }
+    };
+  }, []);
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && hasMore && !isLoadingMore) {
+        if (entries[0].isIntersecting && hasMoreRef.current && !isLoadingMoreRef.current) {
           loadMore();
         }
       },
@@ -51,15 +77,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
     }
 
     return () => observer.disconnect();
-  }, [hasMore, isLoadingMore]);
-
-  const loadMore = () => {
-    setIsLoadingMore(true);
-    setTimeout(() => {
-      setVisibleCount((prev) => prev + 10);
-      setIsLoadingMore(false);
-    }, 800);
-  };
+  }, [loadMore]);
 
   const handleFilterClick = (t: string) => {
     router.push(`/projects${t === "All" ? "" : `?type=${encodeURIComponent(t)}`}`, { scroll: false });

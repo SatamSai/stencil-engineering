@@ -11,7 +11,7 @@ export default function ProjectsPage() {
     <>
       <section className="relative h-[] min-h-[350px] overflow-hidden bg-ink px-10">
         <Image
-          src="/All-Site-Pics/Atlas-Phase-1-2023/Screenshot 2026-04-15 at 6.14.03 PM.png"
+          src="/All-Site-Pics/Atlas-Phase-1-2023/7.png"
           alt="Stencil Engineering portfolio"
           fill
           priority

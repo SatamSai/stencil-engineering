@@ -10,7 +10,6 @@ const NAV_ITEMS = [
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "About", href: "/about" },
-  { label: "Careers", href: "/careers" }
 ];
 
 export function Header() {
@@ -121,11 +120,8 @@ export function Header() {
             onClick={() => setMenuOpen(false)}
             className="inline-flex bg-accent text-bg px-8 py-4 rounded-full text-sm font-medium tracking-[0.02em]"
           >
-            Start a project &rarr;
+            Contact Us &rarr;
           </Link>
-          <div className="mt-8 font-mono text-[11px] tracking-[0.08em] uppercase text-ink-3">
-            (+91 22) 2839 1948/1949
-          </div>
         </div>
       </div>
     </>
