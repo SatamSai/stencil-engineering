@@ -33,7 +33,7 @@ export default function ContactPage() {
             Let's build<br />something lasting.
           </h1>
           <p className="mt-6 text-[20px] leading-relaxed text-white/80 max-w-[52ch]">
-            We would love to hear from you.
+            If you would like to have a chat with us or enquire about any of our services please contact us.
           </p>
         </div>
       </section>

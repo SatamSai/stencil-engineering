@@ -76,8 +76,7 @@ export const TEAM = [
 
 export const CERTIFICATIONS = [
   { id: '1', name: 'ISO 9001:2015', label: 'Quality Management', image: '/certificates/cert-1.png' },
-  { id: '2', name: 'MSME',            label: 'Registered Enterprise',     image: '/certificates/cert-2.png' },
+  { id: '2', name: 'ISO 14001:2015', label: 'Environment Management', image: '/certificates/cert-2.png' },
   { id: '3', name: 'ISO 45001:2018', label: 'Health & Safety Standard',  image: '/certificates/cert-3.png' },
-  { id: '4', name: 'IGBC',            label: 'Green Building Council',    image: '/certificates/cert-4.png' },
   { id: '5', name: 'CRISIL',          label: 'Credit Rated SME',          image: '/certificates/cert-5.png' },
 ];

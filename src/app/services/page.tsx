@@ -18,7 +18,7 @@ const MAIN_SERVICES = [
     title: "Design & Build",
     subtitle: "Start to finish, under one roof",
     desc: "We provide complete design and interior fit-out services in full turnkey solutions helping to reduce project risks and costs, and can lead to faster completion.",
-    image: "/All-Site-Pics/Wipro-Pune/_DSC2690.JPG",
+    image: "/All-Site-Pics/Wipro-Pune/_DSC2690.jpg",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative min-h-[350px] overflow-hidden bg-ink px-10">
         <Image
-          src="/All-Site-Pics/Equinox/DSC_0067-HDR-Pano-Edit.jpg"
+          src="/altimus.webp"
           alt="Stencil Engineering services"
           fill
           priority

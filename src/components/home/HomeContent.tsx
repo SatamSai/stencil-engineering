@@ -269,13 +269,15 @@ export default function HomeContent({ projects }: HomeContentProps) {
 
       {/* Certifications Highlight */}
       <section className="px-10 md:10 py-16" style={{background: '#edededb8'}}>
-        <div className="max-w-[1400px] mx-auto flex flex-col gap-4">
-          <div className="max-w-[45ch]">
+        <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+          <div className="max-w-[45ch] lg:shrink-0">
             <div className="tracking-[0.1em] text-[clamp(14px,1.4vw,24px)] pb-2">Accredited Excellence</div>
             <h3 className="font-serif text-[clamp(28px,3.1vw,40px)] tracking-[-0.01em] leading-tight text-accent">Industry recognized quality <br/>&amp; safety standards</h3>
           </div>
 
-          <CertificationsGallery />
+          <div className="flex-1">
+            <CertificationsGallery />
+          </div>
         </div>
       </section>
 
