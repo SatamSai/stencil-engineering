@@ -118,9 +118,13 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                   className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-8 lg:gap-x-12"
                 >
-                  {displayedProjects.map((project) => (
+                  {displayedProjects.map((project, index) => (
                     <div key={project.id}>
-                      <ProjectCard project={project} onClick={() => setSelectedProject(project)} />
+                      <ProjectCard
+                        project={project}
+                        priority={index < 2}
+                        onClick={() => setSelectedProject(project)}
+                      />
                     </div>
                   ))}
 

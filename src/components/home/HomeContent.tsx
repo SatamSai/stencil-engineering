@@ -208,14 +208,12 @@ export default function HomeContent({ projects }: HomeContentProps) {
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {['wipro-mumbai', 'atlas-phase-1-2023', 'club-mahindra-ashtamudi', 'hcg-manavata-cancer-centre-nashik']
-              .map((id) => projects.find((p) => p.id === id))
-              .filter(Boolean)
-              .map((project) => (
+            {projects.slice(0, 4).map((project, index) => (
               <ProjectCard
-                key={project!.id}
-                project={project!}
-                onClick={() => setSelectedProject(project!)}
+                key={project.id}
+                project={project}
+                priority={index < 2}
+                onClick={() => setSelectedProject(project)}
               />
             ))}
           </div>

@@ -16,6 +16,7 @@ interface ImageViewerModalProps {
 
 export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
   const [selectedIdx, setSelectedIdx] = React.useState(0);
+  const [isImageLoading, setIsImageLoading] = React.useState(true);
   const scrollRef = React.useRef<HTMLDivElement>(null);
   const imgRef = React.useRef<HTMLImageElement>(null);
 
@@ -47,6 +48,10 @@ export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
 
     if (!clickedOnVisibleImage) onClose();
   };
+
+  React.useEffect(() => {
+    setIsImageLoading(true);
+  }, [selectedIdx]);
 
   React.useEffect(() => {
     if (scrollRef.current) {
@@ -91,26 +96,43 @@ export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
       </div>
 
       {/* Main Image */}
-      <div
-        className="flex-1 relative flex items-center justify-center p-2 md:p-4 overflow-hidden"
-        onClick={handleImageAreaClick}
-      >
+      <div className="flex-1 relative flex items-center justify-center p-2 md:p-4 overflow-hidden">
+        <AnimatePresence>
+          {isImageLoading && (
+            <motion.div
+              key="image-loading-spinner"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.15 }}
+              className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none"
+              aria-live="polite"
+              aria-label="Loading image"
+            >
+              <div className="h-14 w-14 rounded-full border-[3px] border-bg/30 border-t-bg animate-spin" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <AnimatePresence mode="wait">
           <motion.div
             key={selectedIdx}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            className="flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.22, ease: "easeInOut" }}
+            className="absolute inset-0 flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
           >
             <Image
               ref={imgRef}
               src={project.images[selectedIdx]}
               alt={`${project.title} — ${selectedIdx + 1}`}
               fill
-              priority
+              quality={90}
+              sizes="100vw"
               className="object-contain rounded-md shadow-2xl"
+              onLoadingComplete={() => setIsImageLoading(false)}
             />
           </motion.div>
         </AnimatePresence>
@@ -131,6 +153,7 @@ export function ImageViewerModal({ project, onClose }: ImageViewerModalProps) {
                 src={img} 
                 alt="" 
                 fill
+                quality={60}
                 sizes="100px"
                 className="object-cover" 
               />

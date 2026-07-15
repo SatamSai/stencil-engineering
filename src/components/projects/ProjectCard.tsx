@@ -16,9 +16,10 @@ interface ProjectCardProps {
     size?: string;
   };
   onClick: () => void;
+  priority?: boolean;
 }
 
-export function ProjectCard({ project, onClick }: ProjectCardProps) {
+export function ProjectCard({ project, onClick, priority = false }: ProjectCardProps) {
   const [currentImageIdx, setCurrentImageIdx] = React.useState(0);
   const [isHovered, setIsHovered] = React.useState(false);
   const [hasHovered, setHasHovered] = React.useState(false);
@@ -69,10 +70,11 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
                 src={project.images[currentImageIdx]}
                 alt={project.title}
                 fill
-                priority={currentImageIdx === 0}
+                priority={priority && currentImageIdx === 0}
+                quality={60}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
-                loading={currentImageIdx === 0 ? "eager" : "lazy"}
+                loading={priority && currentImageIdx === 0 ? "eager" : "lazy"}
               />
             )}
           </motion.div>
